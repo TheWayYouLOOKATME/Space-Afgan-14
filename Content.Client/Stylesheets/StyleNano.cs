@@ -77,7 +77,8 @@ namespace Content.Client.Stylesheets
         public const string StyleClassLabelBig = "LabelBig";
         public const string StyleClassLabelSmall = "LabelSmall";
         public const string StyleClassButtonBig = "ButtonBig";
-
+        public const string StyleClassButtonAfgan = "ButtonAfgan";
+        
         public const string StyleClassButtonHelp = "HelpButton";
 
         public const string StyleClassPopupMessageSmall = "PopupMessageSmall";
@@ -1121,6 +1122,14 @@ namespace Content.Client.Stylesheets
                     new[]
                     {
                         new StyleProperty("font", notoSans16)
+                    }),
+
+                new StyleRule(new SelectorChild(
+                    new SelectorElement(typeof(Button), new[] {StyleClassButtonAfgan}, null, null),
+                    new SelectorElement(typeof(Label), null, null, null)),
+                    new[]
+                    {
+                        new StyleProperty("font", notoSansBold16)
                     }),
 
                 //APC and SMES power state label colors

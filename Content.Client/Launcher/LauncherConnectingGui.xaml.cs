@@ -1,4 +1,5 @@
 using System.Linq;
+using Content.Client.Lobby.UI;
 using Content.Client.Stylesheets;
 using Content.Shared.CCVar;
 using Content.Shared.Dataset;
@@ -36,14 +37,11 @@ namespace Content.Client.Launcher
             _random = random;
             _prototype = prototype;
             _cfg = config;
-
             RobustXamlLoader.Load(this);
-
             LayoutContainer.SetAnchorPreset(this, LayoutContainer.LayoutPreset.Wide);
 
             Stylesheet = IoCManager.Resolve<IStylesheetManager>().SheetSpace;
 
-            ChangeLoginTip();
             ReconnectButton.OnPressed += ReconnectButtonPressed;
             RetryButton.OnPressed += ReconnectButtonPressed;
             ExitButton.OnPressed += _ => _state.Exit();
@@ -111,29 +109,6 @@ namespace Content.Client.Launcher
                 }
 
             }
-        }
-
-        private void ChangeLoginTip()
-        {
-            var tipsDataset = _cfg.GetCVar(CCVars.LoginTipsDataset);
-            var loginTipsEnabled = _prototype.TryIndex<LocalizedDatasetPrototype>(tipsDataset, out var tips);
-
-            LoginTips.Visible = loginTipsEnabled;
-            if (!loginTipsEnabled)
-            {
-                return;
-            }
-
-            var tipList = tips!.Values;
-
-            if (tipList.Count == 0)
-                return;
-
-            var randomIndex = _random.Next(tipList.Count);
-            var tip = tipList[randomIndex];
-            LoginTip.SetMessage(Loc.GetString(tip));
-
-            LoginTipTitle.Text = Loc.GetString("connecting-window-tip", ("numberTip", randomIndex));
         }
 
         protected override void FrameUpdate(FrameEventArgs args)

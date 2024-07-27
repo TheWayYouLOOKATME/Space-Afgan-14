@@ -20,32 +20,30 @@ namespace Content.Client.Lobby.UI
             SetAnchorPreset(Background, LayoutPreset.Wide);
 
             LobbySong.SetMarkup(Loc.GetString("lobby-state-song-no-song-text"));
-
+            CharacterSetup.OnPressed += _ => SwitchState(LobbyGuiState.CharacterSetup);
             LeaveButton.OnPressed += _ => _consoleHost.ExecuteCommand("disconnect");
             OptionsButton.OnPressed += _ => UserInterfaceManager.GetUIController<OptionsUIController>().ToggleWindow();
+
+            RightSide.Visible = false;
         }
 
         public void SwitchState(LobbyGuiState state)
         {
             DefaultState.Visible = false;
-            CharacterSetupState.Visible = false;
-
+            CharacterSetupState.Visible = true;
+            RightSide.Visible = false;
             switch (state)
             {
                 case LobbyGuiState.Default:
                     DefaultState.Visible = true;
-                    RightSide.Visible = true;
+                    CharacterSetupState.Visible = false;
+                    RightSide.Visible = false;
                     break;
                 case LobbyGuiState.CharacterSetup:
                     CharacterSetupState.Visible = true;
 
                     var actualWidth = (float) UserInterfaceManager.RootControl.PixelWidth;
                     var setupWidth = (float) LeftSide.PixelWidth;
-
-                    if (1 - (setupWidth / actualWidth) > 0.30)
-                    {
-                        RightSide.Visible = false;
-                    }
 
                     UserInterfaceManager.GetUIController<LobbyUIController>().ReloadCharacterSetup();
 
