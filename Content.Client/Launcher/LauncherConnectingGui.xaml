@@ -21,7 +21,7 @@
                         <!-- Who the fuck named these cont- oh wait I did -->
                         <Label Name="ConnectStatus" StyleClasses="LabelSubText" Align="Center" />
                     </BoxContainer>
-                    <BoxContainer Orientation="Vertical" Name="ConnectFail" Visible="False">
+                    <BoxContainer Orientation="Vertical" Name="ConnectFail" Visible="True">
                         <RichTextLabel Name="ConnectFailReason" VerticalAlignment="Stretch"/>
                         <Button Name="RetryButton" Text="{Loc 'connecting-retry'}"
                                 HorizontalAlignment="Center"
