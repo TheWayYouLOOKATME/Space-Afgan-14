@@ -43,3 +43,14 @@
       types:
         Radiation: 6
         Piercing: 10
+
+- type: entity
+  id: Bullet9mm
+  name: пуля 9мм
+  parent: BulletPistol
+  noSpawn: true
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 13
