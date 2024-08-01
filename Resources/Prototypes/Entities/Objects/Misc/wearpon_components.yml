@@ -1,0 +1,73 @@
+- type: entity
+  id: WearponComponentRukoiatMP9Evil
+  parent: BaseItem
+  name: Самодельная рукоять от мп9 evil gun
+  description: самоделка.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Objects\Weapons\Сomponents\rukoiatmp9.rsi
+    state: icon
+  - type: Item
+    size: Small
+  - type: Tag
+    tags:
+      - RukoiatMP9Evil
+
+- type: entity
+  id: WearponComponentDetaliMP9Evil
+  parent: BaseItem
+  name: Самодельные детали для ПП
+  description: самоделка.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Objects\Weapons\Сomponents\detalimp9.rsi
+    state: icon
+  - type: Item
+    size: Small
+  - type: Tag
+    tags:
+      - DetaliMP9Evil
+
+- type: entity
+  id: WearponComponentKropusMP9Evil
+  parent: BaseItem
+  name: Корпус от мп9 evil gun
+  description: самоделка.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Objects\Weapons\Сomponents\korpusmp9.rsi
+    state: icon
+  - type: Item
+    size: Normal
+  - type: Tag
+    tags:
+      - KropusMP9Evil
+
+- type: entity
+  id: WearponComponentKropusLuty
+  parent: BaseItem
+  name: Корпус от ПП Luty
+  description: самоделка.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Objects\Weapons\Сomponents\korpusluty.rsi
+    state: icon
+  - type: Item
+    size: Normal
+
+- type: entity
+  id: WearponComponentRukoiatLuty
+  parent: BaseItem
+  name: Самодельная рукоять от ПП Luty
+  description: самоделка.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Objects\Weapons\Сomponents\rukoiatluty.rsi
+    state: icon
+  - type: Item
+    size: Small

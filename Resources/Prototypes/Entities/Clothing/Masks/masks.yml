@@ -622,3 +622,17 @@
   - type: EyeProtection
   - type: BreathMask
   - type: IdentityBlocker
+
+- type: entity
+  parent: ClothingMaskBase
+  id: ClothingMaskHamas
+  name: Маска Хамаса
+  description: Маска бывшей террористической группировки Хамас.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Clothing/Mask/hamasmask.rsi
+  - type: Clothing
+    sprite: Clothing/Mask/hamasmask.rsi
+  - type: Item
+    storedRotation: -90

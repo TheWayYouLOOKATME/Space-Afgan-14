@@ -1,0 +1,25 @@
+- type: constructionGraph
+  id: MP9Graph
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: mp9
+      steps:
+      - tag: RukoiatMP9Evil
+        icon:
+          sprite: Objects\Weapons\Сomponents\rukoiatmp9.rsi
+          state: icon
+        name: рукоять МП9
+      - tag: DetaliMP9Evil
+        icon:
+          sprite: Objects\Weapons\Сomponents\detalimp9.rsi
+          state: icon
+        name: детали для ПП
+      - tag: KropusMP9Evil
+        icon:
+          sprite: Objects\Weapons\Сomponents\korpusmp9.rsi
+          state: icon
+        name: корпус МП9
+  - node: mp9
+    entity: WeaponSubMachineGunPM9
