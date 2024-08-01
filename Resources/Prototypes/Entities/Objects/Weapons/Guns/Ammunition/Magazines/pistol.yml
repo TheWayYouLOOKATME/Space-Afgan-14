@@ -333,6 +333,7 @@
         - Cartridge9mm
   - type: Sprite
     sprite: Objects/Weapons/Guns/Ammunition/Magazine/Pistol/mp9evilmag.rsi
+    scale: "0.6, 0.6"
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -359,6 +360,7 @@
         - Cartridge9mm
   - type: Sprite
     sprite: Objects/Weapons/Guns/Ammunition/Magazine/Pistol/lutymag.rsi
+    scale: "0.5, 0.5"
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
