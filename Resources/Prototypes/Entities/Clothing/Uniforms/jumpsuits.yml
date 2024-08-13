@@ -1347,3 +1347,18 @@
     sprite: Clothing/Uniforms/Jumpsuit/familiar_garbs.rsi
   - type: Clothing
     sprite: Clothing/Uniforms/Jumpsuit/familiar_garbs.rsi
+
+# НАШЕ
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitHamas
+  name: Униформа Хамаса
+  description: Униформа когда то популярной Пакистанской группировки.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/hamas.rsi
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpsuit/hamas.rsi
+

@@ -214,3 +214,18 @@
   icon:
     sprite: Objects/Weapons/Bombs/pipebomb.rsi
     state: icon
+
+### НАШЕ
+
+- type: construction
+  name: MP9 Evil Gun
+  id: MP9EvilGun
+  graph: MP9Graph
+  startNode: start
+  targetNode: mp9
+  category: construction-category-weapons
+  description: real evil
+  icon:
+    sprite: Objects/Weapons/Guns/SMGs/pm9evilgun.rsi
+    state: icon
+  objectType: Item
