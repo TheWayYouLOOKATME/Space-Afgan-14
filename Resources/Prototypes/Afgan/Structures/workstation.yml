@@ -1,0 +1,32 @@
+- type: entity
+  name: Токарный стол
+  description: Какие вещи здесь можно сделать для военных преступлений?
+  id: WorkstationStructure
+  parent: BaseStructure
+  components:
+  - type: Anchorable
+  - type: Transform
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+  - type: PlaceableSurface
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.85,-0.85,0.85,0.85"
+        density: 55
+        mask: #mouse can pass under, but I think this is can understandable by logic
+        - TableMask
+        layer:
+        - TableLayer
+  - type: Sprite
+    sprite: Afgan/Structures/workstation.rsi
+    state: workstation
+    snapCardinals: true
+  - type: Icon
+    sprite: Afgan/Structures/workstation.rsi
+    state: workstation
+  - type: Climbable
+  - type: Clickable
