@@ -1,6 +1,6 @@
 - type: entity
   name: Самодельное ружье
-  parent: WeaponShotgunImprovised
+  parent: [BaseWeaponShotgun, BaseGunWieldable]
   id: AfganPipegun
   description: Это труба на которую намотали приклад изолентой с самодельным ресивиром из гвоздей и говна
   components:
@@ -9,6 +9,9 @@
     scale: "0.5, 0.5"
   - type: Clothing
     sprite: Objects\Weapons\Guns\Snipers\bolt_gun_wood.rsi
+  - type: GunRequiresWield #remove when inaccuracy on spreads is fixed
+  - type: Gun
+    fireRate: 4
   - type: Item
     size: Normal
     shape:
@@ -20,6 +23,3 @@
     whitelist:
       tags:
       - ShellShotgun
-  - type: Construction
-    graph: AfganPipegunGraph
-    node: shotgun
