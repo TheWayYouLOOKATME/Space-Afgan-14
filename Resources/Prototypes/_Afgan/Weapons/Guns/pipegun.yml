@@ -1,0 +1,25 @@
+- type: entity
+  name: Самодельное ружье
+  parent: WeaponShotgunImprovised
+  id: AfganPipegun
+  description: Это труба на которую намотали приклад изолентой с самодельным ресивиром из гвоздей и говна
+  components:
+  - type: Sprite
+    sprite: _Afgan\Weapons\Guns\Snipers\pipegun.rsi
+    scale: "0.5, 0.5"
+  - type: Clothing
+    sprite: Objects\Weapons\Guns\Snipers\bolt_gun_wood.rsi
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,4,0
+    sprite: Objects\Weapons\Guns\Snipers\bolt_gun_wood.rsi
+  - type: BallisticAmmoProvider
+    capacity: 1
+    proto: ShellShotgunImprovised
+    whitelist:
+      tags:
+      - ShellShotgun
+  - type: Construction
+    graph: AfganPipegunGraph
+    node: shotgun
