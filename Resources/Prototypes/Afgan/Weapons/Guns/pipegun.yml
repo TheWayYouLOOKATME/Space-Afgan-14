@@ -5,7 +5,7 @@
   description: Это труба на которую намотали приклад изолентой с самодельным ресивиром из гвоздей и говна
   components:
   - type: Sprite
-    sprite: _Afgan\Weapons\Guns\Snipers\pipegun.rsi
+    sprite: Afgan\Weapons\Guns\Snipers\pipegun.rsi
     scale: "0.5, 0.5"
   - type: Clothing
     sprite: Objects\Weapons\Guns\Snipers\bolt_gun_wood.rsi
