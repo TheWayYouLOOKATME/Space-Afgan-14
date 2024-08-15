@@ -1,7 +1,7 @@
 - type: entity
-  name: Токарный стол
+  name: Верстак
   description: Какие вещи здесь можно сделать для военных преступлений?
-  id: WorkstationStructure
+  id: WorkBench
   parent: BaseStructure
   components:
   - type: Anchorable
@@ -15,7 +15,7 @@
       fix1:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.85,-0.85,0.85,0.85"
+          bounds: "-0.65,-0.45,0.55,0.55"
         density: 55
         mask: #mouse can pass under, but I think this is can understandable by logic
         - TableMask
@@ -30,3 +30,20 @@
     state: workstation
   - type: Climbable
   - type: Clickable
+  - type: ActivatableUI
+    key: enum.LatheUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.LatheUiKey.Key:
+        type: LatheBoundUserInterface
+      enum.ResearchClientUiKey.Key:
+        type: ResearchClientBoundUserInterface
+  - type: MaterialStorage
+    whitelist:
+      tags:
+        - Sheet
+        - RawMaterial
+        - Ingot
+  - type: Lathe
+    staticRecipes: #здесь крафты компонентов
+      - Wirecutter #это для тестов, убрать потом

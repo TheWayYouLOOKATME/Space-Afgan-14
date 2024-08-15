@@ -52,7 +52,7 @@
                     </PanelContainer>
                 </BoxContainer>
                 <BoxContainer Orientation="Horizontal"
-                    HorizontalExpand="True">
+                    HorizontalExpand="True" Visible="False">
                     <Label Margin="8 0 8 0" Text="{Loc 'lathe-menu-amount'}" />
                     <LineEdit
                         Name="AmountLineEdit"

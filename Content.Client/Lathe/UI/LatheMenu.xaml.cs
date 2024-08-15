@@ -99,7 +99,8 @@ public sealed partial class LatheMenu : DefaultWindow
         }
 
         if (!int.TryParse(AmountLineEdit.Text, out var quantity) || quantity <= 0)
-            quantity = 1;
+            if (quantity >= 1)
+                quantity = 1;
 
         var sortedRecipesToShow = recipesToShow.OrderBy(p => p.Name);
         RecipeList.Children.Clear();

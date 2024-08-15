@@ -165,6 +165,9 @@ namespace Content.Server.Lathe
             if (!CanProduce(uid, recipe, 1, component))
                 return false;
 
+            if (component.CurrentRecipe != null)
+                return false;
+
             foreach (var (mat, amount) in recipe.RequiredMaterials)
             {
                 var adjustedAmount = recipe.ApplyMaterialDiscount
@@ -182,7 +185,7 @@ namespace Content.Server.Lathe
         {
             if (!Resolve(uid, ref component))
                 return false;
-            if (component.CurrentRecipe != null || component.Queue.Count <= 0 || !this.IsPowered(uid, EntityManager))
+            if (component.CurrentRecipe != null || component.Queue.Count <= 0)
                 return false;
 
             var recipe = component.Queue.First();
