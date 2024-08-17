@@ -305,6 +305,64 @@ public sealed partial class StaminaSystem : EntitySystem
         }
     }
 
+    public void TakeStaminaDamageAfterSprint(EntityUid uid, float value, StaminaComponent? component, bool visual = true)
+    {
+        if (!Resolve(uid, ref component, false))
+            return;
+
+        var ev = new BeforeStaminaDamageEvent(value);
+        RaiseLocalEvent(uid, ref ev);
+        if (ev.Cancelled)
+            return;
+
+        // Have we already reached the point of max stamina damage?
+        if (component.Critical)
+            return;
+
+        var oldDamage = component.StaminaDamage;
+        component.StaminaDamage = MathF.Max(0f, component.StaminaDamage + value);
+
+        // Reset the decay cooldown upon taking damage.
+        if (oldDamage < component.StaminaDamage)
+        {
+            var nextUpdate = _timing.CurTime + TimeSpan.FromSeconds(component.Cooldown);
+
+            if (component.NextUpdate < nextUpdate)
+                component.NextUpdate = nextUpdate;
+        }
+
+        var slowdownThreshold = component.CritThreshold / 2f;
+
+        // If we go above n% then apply slowdown
+        if (oldDamage < slowdownThreshold &&
+            component.StaminaDamage > slowdownThreshold)
+        {
+            _stunSystem.TrySlowdown(uid, TimeSpan.FromSeconds(6), true, 0.8f, 0.8f);
+        }
+
+        SetStaminaAlert(uid, component);
+
+        if (!component.Critical)
+        {
+            if (component.StaminaDamage >= component.CritThreshold)
+            {
+                EnterStamCrit(uid, component);
+            }
+        }
+        else
+        {
+            if (component.StaminaDamage < component.CritThreshold)
+            {
+                ExitStamCrit(uid, component);
+            }
+        }
+
+        EnsureComp<ActiveStaminaComponent>(uid);
+        Dirty(uid, component);
+
+        if (value <= 0)
+            return;
+    }
     public override void Update(float frameTime)
     {
         base.Update(frameTime);

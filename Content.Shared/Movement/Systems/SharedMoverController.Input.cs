@@ -1,9 +1,12 @@
 using System.Numerics;
 using Content.Shared.CCVar;
+using Content.Shared.Damage.Components;
+using Content.Shared.Damage.Systems;
 using Content.Shared.Follower.Components;
 using Content.Shared.Input;
 using Content.Shared.Movement.Components;
 using Content.Shared.Movement.Events;
+using JetBrains.Annotations;
 using Robust.Shared.GameStates;
 using Robust.Shared.Input;
 using Robust.Shared.Input.Binding;
@@ -11,6 +14,9 @@ using Robust.Shared.Player;
 using Robust.Shared.Serialization;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
+using Robust.Shared.Audio.Systems;
+using Robust.Shared.Random;
+using Content.Shared.Audio;
 
 namespace Content.Shared.Movement.Systems
 {
@@ -19,6 +25,9 @@ namespace Content.Shared.Movement.Systems
     /// </summary>
     public abstract partial class SharedMoverController
     {
+        [Dependency] private readonly StaminaSystem stamn = default!;
+        [Dependency] private readonly SharedAudioSystem audio = default!;
+        [Dependency] private readonly IRobustRandom _random = default!;
         public bool CameraRotationLocked { get; set; }
 
         private void InitializeInput()
@@ -140,7 +149,7 @@ namespace Content.Shared.Movement.Systems
 
         public bool DiagonalMovementEnabled { get; private set; }
 
-        protected virtual void HandleShuttleInput(EntityUid uid, ShuttleButtons button, ushort subTick, bool state) {}
+        protected virtual void HandleShuttleInput(EntityUid uid, ShuttleButtons button, ushort subTick, bool state) { }
 
         private void OnAutoParentChange(EntityUid uid, AutoOrientComponent component, ref EntParentChangedMessage args)
         {
@@ -388,11 +397,11 @@ namespace Content.Shared.Movement.Systems
 
             if (mover.Sprinting)
             {
-                sprint += curDir;
+                walk += curDir;
             }
             else
             {
-                walk += curDir;
+                sprint += curDir;
             }
 
             // Logger.Info($"{curDir}{walk}{sprint}");
@@ -437,9 +446,20 @@ namespace Content.Shared.Movement.Systems
             }
 
             var buttons = component.HeldMoveButtons;
+            var takestmdmg = stamn.TakeStaminaDamageAfterSprint;
+            bool Exhausted = false;
 
             if (enabled)
             {
+                if (component.Sprinting != true && Exhausted != true)
+                {
+                    if (TryComp<StaminaComponent>(entity, out StaminaComponent? stam))
+                    {
+                        takestmdmg(entity, 8, stam, true);
+                        if (stam.StaminaDamage >= 50)
+                            Exhausted = true;
+                    }
+                }
                 buttons |= bit;
             }
             else

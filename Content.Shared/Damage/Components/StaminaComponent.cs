@@ -2,6 +2,8 @@ using Content.Shared.Alert;
 using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
+using Robust.Shared.Audio;
+using System.IO;
 
 namespace Content.Shared.Damage.Components;
 
@@ -56,4 +58,7 @@ public sealed partial class StaminaComponent : Component
 
     [DataField]
     public ProtoId<AlertPrototype> StaminaAlert = "Stamina";
+
+    public SoundSpecifier? ExautsedSound = null;
+   
 }
