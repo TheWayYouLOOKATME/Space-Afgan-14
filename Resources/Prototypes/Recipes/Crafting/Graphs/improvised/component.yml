@@ -21,5 +21,6 @@
           sprite: Objects\Weapons\Сomponents\korpusmp9.rsi
           state: icon
         name: корпус МП9
+        doAfter: 3
   - node: mp9
     entity: WeaponSubMachineGunPM9

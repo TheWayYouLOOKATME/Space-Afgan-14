@@ -1,0 +1,23 @@
+- type: entity
+  parent: ClothingHeadHelmetBasic
+  id: ClothingHeadHelmetHamas
+  name: шлем Хамаса
+  description: Чёрный шлем с повязкой Хамаса.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Head/hamashemelet.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Head/hamashemelet.rsi
+
+- type: entity
+  parent: ClothingHeadHelmetBasic
+  id: ClothingHeadHelmetBlack
+  name: шлем из стали
+  description: Чёрный шлем.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Head/bhemelet.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Head/bhemelet.rsi
