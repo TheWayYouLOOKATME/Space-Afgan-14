@@ -1354,7 +1354,7 @@
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitHamas
   name: Униформа Хамаса
-  description: Униформа когда то популярной Пакистанской группировки.
+  description: Униформа когда то популярной Палестинской группировки.
   suffix: afgan14
   components:
   - type: Sprite

@@ -626,13 +626,13 @@
 - type: entity
   parent: ClothingMaskBase
   id: ClothingMaskHamas
-  name: Маска Хамаса
+  name: Балаклава Хамаса
   description: Маска бывшей террористической группировки Хамас.
   suffix: afgan14
   components:
   - type: Sprite
-    sprite: Clothing/Mask/hamasmask.rsi
+    sprite: Afgan/Clothing/Mask/hamasmask.rsi
   - type: Clothing
-    sprite: Clothing/Mask/hamasmask.rsi
+    sprite: Afgan/Clothing/Mask/hamasmask.rsi
   - type: Item
     storedRotation: -90

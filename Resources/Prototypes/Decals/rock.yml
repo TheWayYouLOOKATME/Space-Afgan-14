@@ -78,3 +78,13 @@
   sprite:
     sprite: Decals/basalt.rsi
     state: basalt9
+
+#НАШЕЕ AFGAN100 GHJWTYNJD
+- type: decal
+  id: AfganRocks1
+  tags: ["rock"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: Afgan/Decals/rocks.rsi
+    state: rocks

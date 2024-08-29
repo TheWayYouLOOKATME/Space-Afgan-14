@@ -1341,3 +1341,39 @@
   - type: IconSmooth
     key: cobblebricks
     base: cobblebrick
+
+#afgan14 sigma kriper halal
+- type: entity
+  parent: BaseWall
+  id: WallStal
+  name: ржавая стена
+  description: страрая, дряхлая, ржавая, стальная стенка.
+  suffix: afgan14
+  components:
+  - type: Tag
+    tags:
+      - Wall
+  - type: Sprite
+    sprite: Afgan/Structures/Walls/shit_wall.rsi
+  - type: Icon
+    sprite: Afgan/Structures/Walls/shit_wall.rsi
+  - type: RCDDeconstructable
+    cost: 6
+    delay: 8
+    fx: EffectRCDDeconstruct8
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          Girder:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: IconSmooth
+    key: bricks
+    base: brick

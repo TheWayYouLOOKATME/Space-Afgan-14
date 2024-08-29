@@ -306,6 +306,24 @@
       "name": "fire_open"
     },
     {
+      "name": "rotten"
+    },
+    {
+      "name": "rotten_door"
+    },
+    {
+      "name": "rotten_open"
+    },
+    {
+      "name": "wooden"
+    },
+    {
+      "name": "wooden_door"
+    },
+    {
+      "name": "wooden_open"
+    },
+    {
       "name": "freezer"
     },
     {
