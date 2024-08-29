@@ -3,6 +3,7 @@
   description: Какие вещи здесь можно сделать для военных преступлений?
   id: WorkBench
   parent: BaseStructure
+  suffix: afgan14
   components:
   - type: Anchorable
   - type: Transform
