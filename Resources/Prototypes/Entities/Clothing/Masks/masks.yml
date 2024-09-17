@@ -636,3 +636,9 @@
     sprite: Afgan/Clothing/Mask/hamasmask.rsi
   - type: Item
     storedRotation: -90
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - Snout
+    hideOnToggle: true
+  - type: IdentityBlocker

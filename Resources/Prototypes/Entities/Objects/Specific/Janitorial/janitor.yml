@@ -202,7 +202,7 @@
         - Scientist
         - Borg
 # Corvax-HiddenDesc-End
-        
+
 - type: entity
   name: plunger
   id: Plunger
@@ -297,10 +297,7 @@
 - type: weightedRandomEntity
   id: PlungerLoot
   weights:
-    RandomSpawner100: 56
-    SpacemenFigureSpawner: 28
-    SpawnMobCockroach: 5
-    MaintenanceToolSpawner: 5
+    Shitspawner: 100
 
 - type: entity
   parent: BaseItem

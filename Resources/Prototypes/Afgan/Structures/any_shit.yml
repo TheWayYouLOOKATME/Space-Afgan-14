@@ -54,6 +54,7 @@
     secretPartName: говно
     examineStash: говна
     openableStash: true
+  - type: PlungerUse
 
 - type: entity
   parent: PosterBase
@@ -122,3 +123,62 @@
     range: 3
     sound:
       path: /Audio/Ambience/Objects/light_hum.ogg
+
+- type: entity
+  name: дерьмо
+  parent: FoodMeatBase
+  id: FoodKakashka
+  description: чьё-то дерьмо.
+  suffix: afgan14
+  components:
+  - type: FlavorProfile
+    flavors:
+      - meaty
+  - type: Tag
+    tags:
+    - Raw
+    - Meat
+  - type: Sprite
+    sprite: Afgan/Objects/shit.rsi
+    state: icon
+    scale: 0.8, 0.8
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: THC
+          Quantity: 5
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 20
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: THC
+        Quantity: 5
+      - ReagentId: Nutriment
+        Quantity: 5
+      - ReagentId: UncookedAnimalProteins
+        Quantity: 20
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Afgan/shit.ogg
+      params:
+        volume: 2
+
+- type: entity
+  name: Shitspawn
+  suffix: afgan14
+  id: Shitspawner
+  parent: MarkerBase
+  components:
+    - type: Sprite
+      layers:
+        - sprite: Afgan/Objects/shit.rsi
+          state: icon
+    - type: RandomSpawner
+      prototypes:
+      - FoodKakashka
+      chance: 1
+      offset: 0.2
