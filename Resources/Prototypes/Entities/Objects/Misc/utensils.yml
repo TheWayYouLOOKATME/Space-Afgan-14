@@ -34,6 +34,7 @@
   id: Fork
   name: fork
   description: An eating utensil, perfect for stabbing.
+  suffix: afgan14 green elephant
   components:
   - type: Tag
     tags:
@@ -50,6 +51,7 @@
     damage:
       types:
         Piercing: 5
+  - type: Plunger
 
 - type: entity
   parent: UtensilBasePlastic
@@ -68,6 +70,7 @@
   id: Spoon
   name: spoon
   description: There is no spoon.
+  suffix: afgan14 green elephant
   components:
   - type: Tag
     tags:
@@ -92,6 +95,12 @@
     timeToMix: 0.5
     reactionTypes:
     - Stir
+  - type: Prying
+  - type: Tool
+    qualities:
+      - Prying
+    useSound:
+      path: /Audio/Afgan/shit.ogg
 
 - type: entity
   parent: UtensilBasePlastic
