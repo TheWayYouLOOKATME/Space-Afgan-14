@@ -3,6 +3,7 @@
   parent: [BaseWeaponShotgun, BaseGunWieldable]
   id: AfganPipegun
   description: Это труба на которую намотали приклад изолентой с самодельным ресивиром из гвоздей и говна
+  suffix: afgan14
   components:
   - type: Sprite
     sprite: Afgan\Weapons\Guns\Snipers\pipegun.rsi
@@ -23,3 +24,6 @@
     whitelist:
       tags:
       - ShellShotgun
+  - type: Construction
+    graph: PipeGraph
+    node: pipe

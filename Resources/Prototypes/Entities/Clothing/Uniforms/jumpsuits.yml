@@ -1362,3 +1362,14 @@
   - type: Clothing
     sprite: Clothing/Uniforms/Jumpsuit/hamas.rsi
 
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitRab
+  name: Ободранная рубашка
+  description: одежда рабов или же людей низшего сословия.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Jumpsuit/rab.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Jumpsuit/rab.rsi

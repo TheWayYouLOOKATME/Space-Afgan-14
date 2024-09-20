@@ -242,3 +242,29 @@
     sprite: Objects/Weapons/Guns/SMGs/ppLuty.rsi
     state: icon
   objectType: Item
+
+- type: construction
+  name: Самодельный дробовик из трубы
+  id: PipeGun
+  graph: PipeGraph
+  startNode: start
+  targetNode: pipe
+  category: construction-category-weapons
+  description: real pipe
+  icon:
+    sprite: Afgan/Weapons/Guns/Snipers/pipegun.rsi
+    state: icon
+  objectType: Item
+
+- type: construction
+  name: Самодельная стальная броня
+  id: SamodelArmor
+  graph: ArmorGraph
+  startNode: start
+  targetNode: armor
+  category: construction-category-weapons
+  description: real armor
+  icon:
+    sprite: Afgan/Clothing/Armor/samodel.rsi
+    state: icon
+  objectType: Item
