@@ -320,3 +320,10 @@
   completetime: 8
   materials:
     Steel: 1000
+
+- type: latheRecipe
+  id: Plastic
+  result: SheetPlastic1
+  completetime: 1
+  materials:
+    Steel: 300
