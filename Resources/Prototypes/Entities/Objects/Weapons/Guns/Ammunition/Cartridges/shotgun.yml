@@ -130,7 +130,7 @@
     maxTransferAmount: 7
   - type: SpentAmmoVisuals
     state: "tranquilizer"
-    
+
 - type: entity
   id: ShellShotgunImprovised
   name: improvised shotgun shell
@@ -146,10 +146,13 @@
     node: shell
   - type: CartridgeAmmo
     count: 10
-    spread: 45 
+    spread: 45
     proto: PelletShotgunImprovised
   - type: SpentAmmoVisuals
     state: "improvised"
+  - type: Tag
+    tags:
+      - ShallImproved
 
 - type: entity
   id: ShellShotgunUranium

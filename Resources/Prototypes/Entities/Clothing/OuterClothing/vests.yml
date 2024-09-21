@@ -2,8 +2,9 @@
 - type: entity
   parent: [ClothingOuterStorageBase, AllowSuitStorageClothing]
   id: ClothingOuterVestWeb
-  name: web vest
+  name: кевларовый жилет
   description: A synthetic armor vest. This one has added webbing and ballistic plates.
+  suffix: afgan14
   components:
   - type: Sprite
     sprite: Clothing/OuterClothing/Vests/webvest.rsi
@@ -90,3 +91,25 @@
     sprite: Clothing/OuterClothing/Vests/tankharness.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Vests/tankharness.rsi
+
+#НАШЕЕЕ
+- type: entity
+  parent: ClothingOuterVestWeb
+  id: ClothingOuterVestStal
+  name: самодельная броня
+  description: стальная пластина на верёвке
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Armor/samodel.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Armor/samodel.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.3
+        Slash: 0.4
+        Piercing: 0.7
+  - type: Construction
+    graph: ArmorGraph
+    node: armor

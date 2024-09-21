@@ -218,7 +218,7 @@
 ### НАШЕ
 
 - type: construction
-  name: MP9 Evil Gun
+  name: МП9 "Evil Gun"
   id: MP9EvilGun
   graph: MP9Graph
   startNode: start
@@ -227,5 +227,44 @@
   description: real evil
   icon:
     sprite: Objects/Weapons/Guns/SMGs/pm9evilgun.rsi
+    state: icon
+  objectType: Item
+
+- type: construction
+  name: ПП "Люти"
+  id: LutyGun
+  graph: LutyGraph
+  startNode: start
+  targetNode: luty
+  category: construction-category-weapons
+  description: real devil
+  icon:
+    sprite: Objects/Weapons/Guns/SMGs/ppLuty.rsi
+    state: icon
+  objectType: Item
+
+- type: construction
+  name: Самодельный дробовик из трубы
+  id: PipeGun
+  graph: PipeGraph
+  startNode: start
+  targetNode: pipe
+  category: construction-category-weapons
+  description: real pipe
+  icon:
+    sprite: Afgan/Weapons/Guns/Snipers/pipegun.rsi
+    state: icon
+  objectType: Item
+
+- type: construction
+  name: Самодельная стальная броня
+  id: SamodelArmor
+  graph: ArmorGraph
+  startNode: start
+  targetNode: armor
+  category: construction-category-weapons
+  description: real armor
+  icon:
+    sprite: Afgan/Clothing/Armor/samodel.rsi
     state: icon
   objectType: Item

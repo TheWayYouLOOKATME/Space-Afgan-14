@@ -47,4 +47,18 @@
         - Ingot
   - type: Lathe
     staticRecipes: #здесь крафты компонентов
-      - Wirecutter #это для тестов, убрать потом
+      - MP9part1
+      - MP9part2
+      - MP9part3
+      - Magaz1
+      - Magaz2
+      - Cartride9mm
+      - Lutypart1
+      - Lutypart2
+      - Izolenta
+      - Pipe
+      - Jelezaka
+      - Gayki
+      - ShallImproved
+      - BlackHemelet
+      - Plastic

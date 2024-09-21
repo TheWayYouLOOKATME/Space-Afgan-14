@@ -221,3 +221,109 @@
   completetime: 3
   materials:
     Plastic: 200
+
+- type: latheRecipe
+  id: MP9part1
+  result: WearponComponentRukoiatMP9Evil
+  completetime: 5
+  materials:
+    Steel: 600
+
+- type: latheRecipe
+  id: MP9part2
+  result: WearponComponentDetaliMP9Evil
+  completetime: 5
+  materials:
+    Steel: 300
+
+- type: latheRecipe
+  id: MP9part3
+  result: WearponComponentKropusMP9Evil
+  completetime: 6
+  materials:
+    Steel: 1200
+
+- type: latheRecipe
+  id: Magaz1
+  result: BaseMagazineMP9evil
+  completetime: 3
+  materials:
+    Steel: 200
+
+- type: latheRecipe
+  id: Magaz2
+  result: BaseMagazineLuty20
+  completetime: 3
+  materials:
+    Steel: 300
+
+- type: latheRecipe
+  id: Cartride9mm
+  result: BaseCartridge9mm
+  completetime: 1
+  materials:
+    Steel: 10
+    Plastic: 10
+
+- type: latheRecipe
+  id: Lutypart1
+  result: WearponComponentKropusLuty
+  completetime: 5
+  materials:
+    Steel: 2000
+
+- type: latheRecipe
+  id: Lutypart2
+  result: WearponComponentRukoiatLuty
+  completetime: 5
+  materials:
+    Steel: 700
+
+- type: latheRecipe
+  id: Izolenta
+  result: Trash5
+  completetime: 3
+  materials:
+    Plastic: 100
+
+- type: latheRecipe
+  id: Pipe
+  result: Trash1
+  completetime: 5
+  materials:
+    Steel: 200
+
+- type: latheRecipe
+  id: Gayki
+  result: Trash3
+  completetime: 4
+  materials:
+    Steel: 50
+
+- type: latheRecipe
+  id: Jelezaka
+  result: Trash4
+  completetime: 5
+  materials:
+    Steel: 800
+
+- type: latheRecipe
+  id: ShallImproved
+  result: ShellShotgunImprovised
+  completetime: 5
+  materials:
+    Steel: 500
+
+- type: latheRecipe
+  id: BlackHemelet
+  result: ClothingHeadHelmetBlack
+  completetime: 8
+  materials:
+    Steel: 1000
+
+- type: latheRecipe
+  id: Plastic
+  result: SheetPlastic1
+  completetime: 1
+  materials:
+    Steel: 300

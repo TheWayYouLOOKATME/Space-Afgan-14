@@ -58,6 +58,9 @@
     state: icon
   - type: Item
     size: Normal
+  - type: Tag
+    tags:
+      - KropusLuty
 
 - type: entity
   id: WearponComponentRukoiatLuty
@@ -71,3 +74,6 @@
     state: icon
   - type: Item
     size: Small
+  - type: Tag
+    tags:
+      - RukoiatLuty

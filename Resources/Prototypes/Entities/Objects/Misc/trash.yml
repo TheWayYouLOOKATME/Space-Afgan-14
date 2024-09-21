@@ -1,7 +1,7 @@
 - type: entity
   id: Trash1
   parent: BaseItem
-  name: Водопроводная труба
+  name: водопроводная труба
   description: мусор, используемый для создания оружия кустарного производства.
   suffix: afgan14
   components:
@@ -10,11 +10,14 @@
     state: icon
   - type: Item
     size: Normal
+  - type: Tag
+    tags:
+      - PipeV
 
 - type: entity
   id: Trash2
   parent: BaseItem
-  name: Кусок древесины
+  name: кусок древесины
   description: мусор, используемый для создания оружия кустарного производства.
   suffix: afgan14
   components:
@@ -27,7 +30,7 @@
 - type: entity
   id: Trash3
   parent: BaseItem
-  name: Гайки
+  name: гайки
   description: мусор, используемый для создания оружия кустарного производства.
   suffix: afgan14
   components:
@@ -36,11 +39,14 @@
     state: icon
   - type: Item
     size: Tiny
+  - type: Tag
+    tags:
+      - Gayki
 
 - type: entity
   id: Trash4
   parent: BaseItem
-  name: Ржавый кусок металлолома
+  name: ржавый кусок металлолома
   description: мусор, используемый для создания оружия кустарного производства.
   suffix: afgan14
   components:
@@ -49,3 +55,23 @@
     state: icon
   - type: Item
     size: Small
+  - type: Tag
+    tags:
+      - Jelezaka
+
+- type: entity
+  id: Trash5
+  parent: BaseItem
+  name: изолента
+  description: мусор, используемый для создания оружия кустарного производства.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Objects/Trash/trash5.rsi
+    state: icon
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+      - Izolenta
+

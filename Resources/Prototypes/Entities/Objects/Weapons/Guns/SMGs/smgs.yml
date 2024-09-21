@@ -381,3 +381,6 @@
         whitelist:
           tags:
             - CartridgePistol
+  - type: Construction
+    graph: LutyGraph
+    node: luty

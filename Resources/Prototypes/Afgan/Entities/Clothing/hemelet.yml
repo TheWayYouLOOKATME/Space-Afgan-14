@@ -21,3 +21,6 @@
     sprite: Afgan/Clothing/Head/bhemelet.rsi
   - type: Clothing
     sprite: Afgan/Clothing/Head/bhemelet.rsi
+  - type: Tag
+    tags:
+      - BlackHemelet
