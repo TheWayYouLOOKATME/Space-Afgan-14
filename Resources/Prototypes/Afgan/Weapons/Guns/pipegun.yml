@@ -23,7 +23,7 @@
     proto: ShellShotgunImprovised
     whitelist:
       tags:
-      - ShellShotgun
+      - ShallImproved
   - type: Construction
     graph: PipeGraph
     node: pipe
