@@ -202,4 +202,4 @@
     sound:
       collection: Radio
   - type: UseDelay
-    delay: 500.0
+    delay: 350.0

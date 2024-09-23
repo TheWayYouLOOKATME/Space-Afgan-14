@@ -107,7 +107,7 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.3
+        Blunt: 0.4
         Slash: 0.4
         Piercing: 0.7
   - type: Construction

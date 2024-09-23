@@ -13,6 +13,14 @@
   - type: Tag
     tags:
       - PipeV
+  - type: MeleeWeapon
+    wideAnimationRotation: -135
+    damage:
+      types:
+        Blunt: 10
+        Structural: 3
+    soundHit:
+      collection: MetalThud
 
 - type: entity
   id: Trash2

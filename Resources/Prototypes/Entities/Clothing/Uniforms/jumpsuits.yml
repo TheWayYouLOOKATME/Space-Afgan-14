@@ -1373,3 +1373,15 @@
     sprite: Afgan/Clothing/Jumpsuit/rab.rsi
   - type: Clothing
     sprite: Afgan/Clothing/Jumpsuit/rab.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitTaliban
+  name: аристакратичный костюм
+  description: раньше его носили выжные персоны Талибана.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Jumpsuit/taliban.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Jumpsuit/taliban.rsi
