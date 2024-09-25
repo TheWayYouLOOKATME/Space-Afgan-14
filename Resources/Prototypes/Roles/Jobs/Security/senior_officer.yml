@@ -2,6 +2,7 @@
   id: SeniorOfficer
   name: job-name-senior-officer
   description: job-description-senior-officer
+  setPreference: false
   playTimeTracker: JobSeniorOfficer
   requirements:
     - !type:RoleTimeRequirement

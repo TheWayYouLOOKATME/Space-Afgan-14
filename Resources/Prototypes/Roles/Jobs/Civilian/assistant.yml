@@ -6,14 +6,25 @@
   startingGear: PassengerGear
   icon: "JobIconPassenger"
   supervisors: job-supervisors-everyone
-#  access: # Corvax-MRP
-#  - Maintenance
+  access:
+  - Salvage
 
 - type: startingGear
   id: PassengerGear
   equipment:
-    id: PassengerPDA
-    ears: ClothingHeadsetGrey
-  #storage:
-    #back:
-    #- Stuff
+    jumpsuit: ClothingUniformJumpsuitHamas
+    back: ClothingBackpackSatchelLeather
+    shoes: ClothingShoesBootsCombatFilled
+    mask: ClothingMaskHamas
+    head: ClothingHeadHelmetHamas
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterVestWeb
+    suitstorage: WeaponSubMachineGunPM9
+    id: SalvageIDCard
+    pocket1: RadioHandheld
+    pocket2: Torch
+  storage:
+    back:
+    - BaseMagazineMP9evil
+    - BaseMagazineMP9evil
+    - BaseMagazineMP9evil

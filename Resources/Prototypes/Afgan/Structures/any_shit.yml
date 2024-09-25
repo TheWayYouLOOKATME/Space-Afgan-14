@@ -195,6 +195,7 @@
     state: icon
   - type: Item
     sprite: Afgan/Objects/radio.rsi
+    size: Large
   - type: EmitSoundOnUse
     sound:
       collection: Radio
@@ -202,4 +203,4 @@
     sound:
       collection: Radio
   - type: UseDelay
-    delay: 350.0
+    delay: 190.0

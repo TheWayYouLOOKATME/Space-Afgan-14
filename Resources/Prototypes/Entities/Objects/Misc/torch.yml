@@ -30,6 +30,7 @@
       state: icon
     - type: Item
       sprite: Objects/Misc/torch.rsi
+      size: Normal
       heldPrefix: unlit
     - type: Construction
       graph: LightTorch

@@ -268,3 +268,16 @@
     sprite: Afgan/Clothing/Armor/samodel.rsi
     state: icon
   objectType: Item
+
+- type: construction
+  name: Самодельная баллистическая маска
+  id: SamodelMask
+  graph: MaskGraph
+  startNode: start
+  targetNode: mask
+  category: construction-category-weapons
+  description: real mask
+  icon:
+    sprite: Afgan/Clothing/Mask/balmask.rsi
+    state: icon
+  objectType: Item
