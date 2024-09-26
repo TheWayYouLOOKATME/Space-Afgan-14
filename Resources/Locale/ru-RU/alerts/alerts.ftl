@@ -26,12 +26,12 @@ alerts-ensnared-name = [color=yellow]Захваченный[/color]
 alerts-ensnared-desc = Вы [color=yellow]попали в ловушку[/color], и это мешает вам двигаться.
 alerts-buckled-name = [color=yellow]Пристёгнуты[/color]
 alerts-buckled-desc = Вы к чему-то [color=yellow]пристёгнуты[/color]. Щёлкните по иконке чтобы отстегнуться, если на вас [color=yellow]не надеты наручники.[/color]
-alerts-crit-name = [color=red]Критическое состояние[/color]
-alerts-crit-desc = Вы серьёзно ранены и без сознания.
-alerts-dead-name = Смерть
-alerts-dead-desc = Вы мертвы. Учтите, что вас ещё можно воскресить!
-alerts-health-name = Здоровье
-alerts-health-desc = [color=green]Синий и зелёный[/color] хорошо. [color=red]Красный[/color] плохо.
+alerts-crit-name = [color=red]ТЫ ПОУШИ В ДЕРЬМЕ[/color]
+alerts-crit-desc = [color=yellow]ALLAH AKBAR[/color]
+alerts-dead-name = [color=red]КОНЧИНА[/color]
+alerts-dead-desc = ТЫ БЫЛ ЖАЛКИМ И НИКЧЕМНЫМ КУСКОМ ДЕРЬМА!
+alerts-health-name = Твоё немытое ебало
+alerts-health-desc = ТЫ ПРОСТО [color=red]НИЧТОЖНОЕ ОТРОДЬЕ![/color]
 alerts-battery-name = Батарея
 alerts-battery-desc = Если батарея разрядится, вы не сможете использовать свои способности.
 alerts-no-battery-name = Нет батареи
