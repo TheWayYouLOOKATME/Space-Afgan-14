@@ -26,7 +26,6 @@
     head: ClothingHeadHelmetBlack
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterVestStal
-    suitstorage: WeaponSubMachineGunPM9
     id: SalvageIDCard
     pocket1: RadioHandheld
     pocket2: Torch
@@ -38,3 +37,4 @@
     - Scalpel
     - Saw
     - Retractor
+    - Syringe

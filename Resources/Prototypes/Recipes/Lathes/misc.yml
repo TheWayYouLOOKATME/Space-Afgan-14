@@ -341,3 +341,24 @@
   completetime: 10
   materials:
     Steel: 3000
+
+- type: latheRecipe
+  id: AKmagaz
+  result: MagazineLightRifleAK
+  completetime: 8
+  materials:
+    Steel: 1000
+
+- type: latheRecipe
+  id: AKmagaz60
+  result: MagazineLightRifleAK60
+  completetime: 10
+  materials:
+    Steel: 2300
+
+- type: latheRecipe
+  id: HatWelding
+  result: ClothingHeadHatWelding
+  completetime: 8
+  materials:
+    Steel: 1000

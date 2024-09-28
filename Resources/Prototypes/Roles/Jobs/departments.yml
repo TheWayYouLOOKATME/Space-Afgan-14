@@ -1,6 +1,6 @@
 - type: department
-  id: Afgan
-  description: "афганцы"
+  id: Specific
+  description: department-Specific-description
   color: "#9FED58"
   weight: -10
   roles:
@@ -9,15 +9,15 @@
   - Chaplain
 
 - type: department
-  id: Outsiders
-  description: "дикие"
+  id: Security
+  description: department-Security-description
   color: "#EFB341"
   roles:
   - AtmosphericTechnician
 
 - type: department
-  id: Povstans
-  description: "повстанцы"
+  id: Science
+  description: department-Science-description
   color: "#9FED58"
   weight: 10
   roles:

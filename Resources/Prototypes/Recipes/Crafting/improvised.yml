@@ -294,3 +294,16 @@
     sprite: Afgan/Weapons/Guns/Rifels/samodel_AK.rsi
     state: icon
   objectType: Item
+
+- type: construction
+  name: Алтын
+  id: SamodeAltin
+  graph: AltinGraph
+  startNode: start
+  targetNode: altin
+  category: construction-category-weapons
+  description: real altin
+  icon:
+    sprite: Afgan/Clothing/Head/altin.rsi
+    state: icon
+  objectType: Item

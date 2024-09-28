@@ -143,3 +143,25 @@
               doAfter: 10
     - node: ak
       entity: WeaponRifleAKSamodel
+
+- type: constructionGraph
+  id: AltinGraph
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: altin
+      steps:
+      - tag: BlackHemelet
+        icon:
+          sprite: Afgan/Clothing/Head/bhemelet.rsi
+          state: icon
+        name: стальной шлем
+      - tag: WeldingMask
+        icon:
+          sprite: Clothing/Head/Welding/welding.rsi
+          state: icon
+        name: сварочная маска
+        doAfter: 5
+  - node: altin
+    entity: ClothingHeadHelmetAltin
