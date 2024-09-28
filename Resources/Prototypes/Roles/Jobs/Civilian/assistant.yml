@@ -6,7 +6,7 @@
   playTimeTracker: JobPassenger
   startingGear: PassengerGear
   icon: "JobIconPassenger"
-  supervisors: job-supervisors-everyone
+  supervisors: job-supervisors-hire
   access:
   - Salvage
 

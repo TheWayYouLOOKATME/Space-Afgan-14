@@ -6,6 +6,7 @@
   roles:
   - Bartender
   - Passenger
+  - Chaplain
 
 - type: department
   id: Outsiders
@@ -15,8 +16,8 @@
   - AtmosphericTechnician
 
 - type: department
-  id: Partisans
-  description: "партизаны"
+  id: Povstans
+  description: "повстанцы"
   color: "#9FED58"
   weight: 10
   roles:

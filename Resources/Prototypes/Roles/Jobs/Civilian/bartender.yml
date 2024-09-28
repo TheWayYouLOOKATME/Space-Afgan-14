@@ -7,7 +7,7 @@
   requirements:
     - !type:DepartmentTimeRequirement
       department: Civilian
-      time: 0 #1 hrs # Corvax-RoleTime
+      time: 0
   startingGear: BartenderGear
   icon: "JobIconBartender"
   supervisors: job-supervisors-everyone
@@ -18,20 +18,20 @@
 - type: startingGear
   id: BartenderGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitHamas
+    jumpsuit: ClothingUniformJumpsuitTaliban
     back: ClothingBackpackSatchelLeather
     shoes: ClothingShoesBootsCombatFilled
-    mask: ClothingMaskHamas
+    mask: ClothingMaskBalistic
     head: ClothingHeadHelmetHamas
     gloves: ClothingHandsGlovesCombat
-    outerClothing: ClothingOuterVestWeb
-    suitstorage: WeaponSubMachineGunPM9
+    outerClothing: ClothingOuterVestWebMerc
+    suitstorage: WeaponSubMachineGunLuty
     id: SalvageIDCard
     pocket1: RadioHandheld
     pocket2: Torch
   storage:
     back:
-    - BaseMagazineMP9evil
-    - BaseMagazineMP9evil
-    - BaseMagazineMP9evil
+    - BaseMagazineLuty20
+    - BaseMagazineLuty20
+    - BaseMagazineLuty20
 

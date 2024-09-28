@@ -1,5 +1,5 @@
-ent-MobRatvarBase = Ратвар
-    .desc = Ваш разум испытывает боль, не в силах понять сложную механику того, что перед вами.
+ent-MobRatvarBase = АЛЛАХ
+    .desc = ИНША АЛЛАХ!!!
 ent-MobRatvarSpawn = { ent-MobRatvarBase }
     .suffix = Спавн
     .desc = { ent-MobRatvarBase.desc }
