@@ -42,8 +42,8 @@ alerts-piloting-name = Пилотирование шаттла
 alerts-piloting-desc = Вы пилотируете шаттл. Щёлкните по иконке, чтобы прекратить пилотирование.
 alerts-hunger-name = [color=yellow]Голод[/color]
 alerts-hunger-desc = Было бы неплохо перекусить.
-alerts-stamina-name = Выносливость
-alerts-stamina-desc = Вы будете оглушены, если она опустится до нуля.
+alerts-stamina-name = [color=yellow]СТАМИНА[/color]
+alerts-stamina-desc = Прибереги её, спасая свой зад от [color=red]твари.[/color]
 alerts-starving-name = [color=red]Сильный голод[/color]
 alerts-starving-desc = Вы истощены. Голод вас замедляет.
 alerts-thirsty-name = [color=yellow]Жажда[/color]

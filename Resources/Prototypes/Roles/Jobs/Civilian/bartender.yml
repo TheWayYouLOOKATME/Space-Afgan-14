@@ -2,6 +2,7 @@
   id: Bartender
   name: job-name-bartender
   description: job-description-bartender
+  canBeAntag: false
   playTimeTracker: JobBartender
   requirements:
     - !type:DepartmentTimeRequirement
