@@ -327,3 +327,17 @@
   completetime: 1
   materials:
     Steel: 300
+
+- type: latheRecipe
+  id: AK1
+  result: WearponComponentAK1
+  completetime: 10
+  materials:
+    Steel: 1500
+
+- type: latheRecipe
+  id: AK2
+  result: WearponComponentAK2
+  completetime: 10
+  materials:
+    Steel: 3000

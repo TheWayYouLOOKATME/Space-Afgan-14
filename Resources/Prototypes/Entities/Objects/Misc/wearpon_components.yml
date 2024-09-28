@@ -77,3 +77,35 @@
   - type: Tag
     tags:
       - RukoiatLuty
+
+- type: entity
+  id: WearponComponentAK1
+  parent: BaseItem
+  name: самодельный ствол и газблок АК74
+  description: самоделка.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Objects/AK-parts/ak74-2part.rsi
+    state: icon
+  - type: Item
+    size: Normal
+  - type: Tag
+    tags:
+      - AKpart1
+
+- type: entity
+  id: WearponComponentAK2
+  parent: BaseItem
+  name: корпус АК74
+  description: самоделка.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Objects/AK-parts/ak74-1part.rsi
+    state: icon
+  - type: Item
+    size: Normal
+  - type: Tag
+    tags:
+      - AKpart2

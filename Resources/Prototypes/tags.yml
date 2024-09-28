@@ -1398,3 +1398,14 @@
 - type: Tag
   id: ShallImproved
 
+- type: Tag
+  id: CartridgeLightRifleAK
+
+- type: Tag
+  id: MagazineLightRifleAK
+
+- type: Tag
+  id: AKpart1
+
+- type: Tag
+  id: AKpart2

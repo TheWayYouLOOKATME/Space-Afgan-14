@@ -281,3 +281,16 @@
     sprite: Afgan/Clothing/Mask/balmask.rsi
     state: icon
   objectType: Item
+
+- type: construction
+  name: Самодельный АК-74
+  id: SamodelAK
+  graph: AKGraph
+  startNode: start
+  targetNode: ak
+  category: construction-category-weapons
+  description: real ak
+  icon:
+    sprite: Afgan/Weapons/Guns/Rifels/samodel_AK.rsi
+    state: icon
+  objectType: Item

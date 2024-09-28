@@ -119,3 +119,27 @@
               doAfter: 8
     - node: mask
       entity: ClothingMaskBalistic
+
+- type: constructionGraph
+  id: AKGraph
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: ak
+          steps:
+            - tag: AKpart2
+              icon:
+                sprite: Afgan/Objects/AK-parts/ak74-1part.rsi
+                state: icon
+              name: корпус ак74
+            - tag: AKpart1
+              icon:
+                sprite: Afgan/Objects/AK-parts/ak74-2part.rsi
+                state: icon
+              name: самодельный газблок и ствол
+            - material: WoodPlank
+              amount: 30
+              doAfter: 10
+    - node: ak
+      entity: WeaponRifleAKSamodel
