@@ -2,11 +2,11 @@
   id: Reporter
   name: job-name-reporter
   description: job-description-reporter
-  setPreference: false
   playTimeTracker: JobReporter
+  canBeAntag: false
   startingGear: ReporterGear
   icon: "JobIconReporter"
-  supervisors: job-supervisors-hop
+  supervisors: job-supervisors-everyone
   access:
   - Service
   - Maintenance
@@ -14,9 +14,27 @@
 - type: startingGear
   id: ReporterGear
   equipment:
-    shoes: ClothingShoesColorWhite
-    id: ReporterPDA
-    ears: ClothingHeadsetService
-  #storage:
-    #back:
-    #- Stuff
+    jumpsuit: ClothingUniformJumpsuitPovstan
+    belt: BibleKoran
+    back: ClothingBackpackSatchelLeather
+    eyes: ClothingEyesGlassesMercenary
+    shoes: ClothingShoesBootsMercFilled
+    mask: ClothingMaskBalistic
+    head: ClothingHeadHelmetPovstanec
+    gloves: ClothingHandsMercGlovesCombat
+    outerClothing: ClothingOuterVestWebMerc
+    suitstorage: WeaponSubMachineGunLuty
+    pocket1: RadioHandheldSecurity
+    pocket2: Torch
+  storage:
+    back:
+    - BaseMagazineLuty20
+    - BaseMagazineLuty20
+    - BaseMagazineLuty20
+    - BaseMagazineLuty20
+    - BaseMagazineLuty20
+    - PipeBomb
+    - PipeBomb
+    - FireBomb
+    - FireBomb
+

@@ -26,14 +26,14 @@
     head: ClothingHeadHelmetHamas
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterVestPravitel
-    suitstorage: WeaponSubMachineGunLuty
+    suitstorage: WeaponRifleAKSamodel
     id: SalvageIDCard
     pocket1: RadioHandheld
     pocket2: Torch
   storage:
     back:
-    - BaseMagazineLuty20
-    - BaseMagazineLuty20
-    - BaseMagazineLuty20
+    - MagazineLightRifleAK
+    - MagazineLightRifleAK
+    - MagazineLightRifleAK
     - FlippoEngravedLighter
 

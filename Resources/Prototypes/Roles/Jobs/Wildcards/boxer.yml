@@ -2,6 +2,7 @@
   id: Boxer
   name: job-name-boxer
   description: job-description-boxer
+  canBeAntag: false
   playTimeTracker: JobBoxer
   startingGear: BoxerGear
   icon: "JobIconBoxer"

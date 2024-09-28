@@ -10,7 +10,6 @@
   access:
   - Chapel
   - Salvage
-  - Maintenance
   special:
   - !type:AddComponentSpecial
     components:

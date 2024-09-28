@@ -31,12 +31,10 @@
 - type: roleLoadout
   id: JobPassenger
   groups:
-  - Inventory
 
 - type: roleLoadout
   id: JobBartender
   groups:
-  - Inventory
 
 - type: roleLoadout
   id: JobServiceWorker
@@ -93,7 +91,6 @@
 - type: roleLoadout
   id: JobChaplain
   groups:
-  - Inventory
 
 - type: roleLoadout
   id: JobJanitor
@@ -257,15 +254,7 @@
 - type: roleLoadout
   id: JobAtmosphericTechnician
   groups:
-  - Inventory # Corvax-Loadouts
-  - GroupTankHarness
-  - AtmosphericTechnicianJumpsuit
-  - AtmosphericTechnicianBackpack
-  - AtmosphericTechnicianOuterClothing
-  - AtmosphericTechnicianShoes
-  - SurvivalExtended
-  - Trinkets
-  - GroupSpeciesBreathTool
+
 
 # Science
 - type: roleLoadout
@@ -481,14 +470,6 @@
 - type: roleLoadout
   id: JobReporter
   groups:
-  - Inventory # Corvax-Loadouts
-  - GroupTankHarness
-  - ReporterJumpsuit
-  - CommonBackpack
-  - Glasses
-  - Survival
-  - Trinkets
-  - GroupSpeciesBreathTool
 
 - type: roleLoadout
   id: JobPsychologist
@@ -504,15 +485,6 @@
 - type: roleLoadout
   id: JobBoxer
   groups:
-  - Inventory # Corvax-Loadouts
-  - GroupTankHarness
-  - BoxerJumpsuit
-  - BoxerGloves
-  - CommonBackpack
-  - Glasses
-  - Survival
-  - Trinkets
-  - GroupSpeciesBreathTool
 
 # These loadouts are used for non-crew spawns, like off-station antags and event mobs
 # They will be used without player configuration, thus they will only ever apply what is forced by MinLimit
