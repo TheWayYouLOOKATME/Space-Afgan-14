@@ -1,6 +1,7 @@
 - type: entity
   abstract: true
   id: MobRatvarBase #can't have the clockwork justiciar be associated with his (im)mortal enemy
+  suffix: afgan14, DO NOT MAP PLEASE, FUCKING NIGGERS
   name: АЛЛАХ
   description: Your mind aches as it fails to understand the complex mechanics of what is before you.
   components:
