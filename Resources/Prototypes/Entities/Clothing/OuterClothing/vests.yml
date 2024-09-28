@@ -113,3 +113,24 @@
   - type: Construction
     graph: ArmorGraph
     node: armor
+
+- type: entity
+  parent: ClothingOuterVestWeb
+  id: ClothingOuterVestPravitel
+  name: бронежилет Правителя
+  description: эта броня была подарена Правителю лучшим кузнецом Афгана перед самой его кончиной.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Armor/pravitelvest.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Armor/pravitelvest.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.3
+        Slash: 0.2
+        Piercing: 0.1
+        Heat: 0.5
+  - type: ExplosionResistance
+    damageCoefficient: 0.9

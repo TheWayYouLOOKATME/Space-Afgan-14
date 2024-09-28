@@ -1385,3 +1385,15 @@
     sprite: Afgan/Clothing/Jumpsuit/taliban.rsi
   - type: Clothing
     sprite: Afgan/Clothing/Jumpsuit/taliban.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitPovstan
+  name: повстанческий камиз
+  description: удобный и символичный.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Jumpsuit/povstanec.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Jumpsuit/povstanec.rsi

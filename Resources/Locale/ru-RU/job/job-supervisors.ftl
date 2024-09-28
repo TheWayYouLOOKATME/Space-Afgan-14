@@ -1,6 +1,6 @@
 job-supervisors-centcom = Центральному командованию
 job-supervisors-captain = капитану
-job-supervisors-hop = главе персонала
+job-supervisors-hop = Главе Повстанцев
 job-supervisors-hos = главе службы безопасности
 job-supervisors-ce = старшему инженеру
 job-supervisors-cmo = главному врачу

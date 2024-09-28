@@ -20,11 +20,12 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitTaliban
     back: ClothingBackpackSatchelLeather
+    eyes: ClothingEyesGlassesSunglasses
     shoes: ClothingShoesBootsCombatFilled
     mask: ClothingMaskBalistic
     head: ClothingHeadHelmetHamas
     gloves: ClothingHandsGlovesCombat
-    outerClothing: ClothingOuterVestWebMerc
+    outerClothing: ClothingOuterVestPravitel
     suitstorage: WeaponSubMachineGunLuty
     id: SalvageIDCard
     pocket1: RadioHandheld
@@ -34,4 +35,5 @@
     - BaseMagazineLuty20
     - BaseMagazineLuty20
     - BaseMagazineLuty20
+    - FlippoEngravedLighter
 

@@ -69,6 +69,11 @@
       Peckish: 50
       Starving: 25
       Dead: 10
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      150: Critical
+      200: Dead
 
 
 
