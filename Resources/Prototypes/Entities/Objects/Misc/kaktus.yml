@@ -49,3 +49,15 @@
         density: 2000
         layer:
         - WallLayer
+
+- type: entity
+  parent: BaseTree
+  id: Kaktus2
+  name: Кактус
+  description: ебать, колится!
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Objects/kaktus.rsi
+    state: kaktus2
+    offset: 0,0

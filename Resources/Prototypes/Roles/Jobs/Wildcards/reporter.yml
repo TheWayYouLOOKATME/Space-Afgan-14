@@ -15,7 +15,6 @@
   id: ReporterGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitPovstan
-    belt: BibleKoran
     back: ClothingBackpackSatchelLeather
     eyes: ClothingEyesGlassesMercenary
     shoes: ClothingShoesBootsMercFilled
