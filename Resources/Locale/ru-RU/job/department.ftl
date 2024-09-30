@@ -1,7 +1,7 @@
 department-Cargo = Отдел снабжения
-department-Civilian = Сервисный отдел
+department-Civilian = Нейтральные
 department-Command = Командование
-department-Engineering = Инженерный отдел
+department-Engineering = Рабы
 department-Medical = Медицинский отдел
 department-Security = Отбросы
 department-Science = Повстанцы

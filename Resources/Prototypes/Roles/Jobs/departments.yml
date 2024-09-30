@@ -2,12 +2,26 @@
   id: Specific
   description: department-Specific-description
   color: "#9FED58"
-  weight: -10
   roles:
   - Bartender
   - Passenger
   - Chaplain
   - Botanist
+
+- type: department
+  id: Engineering
+  description: department-Engineering-description
+  color: "#EFB341"
+  roles:
+  - AtmosphericTechnician
+
+- type: department
+  id: Science
+  description: department-Science-description
+  color: "#9FED58"
+  roles:
+  - Boxer
+  - Reporter
 
 - type: department
   id: Security
@@ -17,10 +31,8 @@
   - AtmosphericTechnician
 
 - type: department
-  id: Science
-  description: department-Science-description
-  color: "#9FED58"
-  weight: 10
+  id: Civilian
+  description: department-Security-description
+  color: "#EFB341"
   roles:
-  - Boxer
-  - Reporter
+  - AtmosphericTechnician
