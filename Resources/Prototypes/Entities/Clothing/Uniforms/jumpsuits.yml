@@ -1397,3 +1397,15 @@
     sprite: Afgan/Clothing/Jumpsuit/povstanec.rsi
   - type: Clothing
     sprite: Afgan/Clothing/Jumpsuit/povstanec.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitShtany
+  name: штаны оборванца
+  description: дырявые, залатанные, изношенные штаны, присущие оборванцу.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Jumpsuit/shtany.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Jumpsuit/shtany.rsi

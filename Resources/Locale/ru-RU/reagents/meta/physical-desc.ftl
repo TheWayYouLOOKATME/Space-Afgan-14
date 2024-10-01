@@ -58,6 +58,7 @@ reagent-physical-desc-nondescript = неописуемое
 reagent-physical-desc-burning = горящее
 reagent-physical-desc-porous = пористое
 reagent-physical-desc-powdery = порошкообразное
+reagent-physical-desc-opium = ЕБАНУТОЕ
 reagent-physical-desc-creamy = сливочное
 reagent-physical-desc-sticky = липкое
 reagent-physical-desc-bubbly = пузыристое
