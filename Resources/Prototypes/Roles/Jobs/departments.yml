@@ -1,5 +1,5 @@
 - type: department
-  id: Specific
+  id: Civilian
   description: department-Specific-description
   color: "#9FED58"
   roles:
@@ -30,9 +30,4 @@
   roles:
   - AtmosphericTechnician
 
-- type: department
-  id: Civilian
-  description: department-Security-description
-  color: "#EFB341"
-  roles:
-  - AtmosphericTechnician
+
