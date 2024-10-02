@@ -170,3 +170,9 @@
   name: chat-speech-verb-name-pigwar
   speechVerbStrings:
   - chat-speech-verb-pigwar-strong
+
+- type: speechVerb
+  id: Oblezliy
+  name: chat-speech-verb-name-oblezliy
+  speechVerbStrings:
+  - chat-speech-verb-oblezliy-strong

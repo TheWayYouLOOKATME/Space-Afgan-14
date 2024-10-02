@@ -47,3 +47,7 @@
 - type: nameIdentifierGroup
   id: PigWar
   prefix: СВИН
+
+- type: nameIdentifierGroup
+  id: Oblezliy
+  prefix: еблан
