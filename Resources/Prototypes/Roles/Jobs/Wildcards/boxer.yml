@@ -13,7 +13,7 @@
 - type: startingGear
   id: BoxerGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitPovstan
+    jumpsuit: ClothingUniformJumpsuitPovstanKurtka
     back: ClothingBackpackSatchelLeather
     shoes: ClothingShoesBootsSalvage
     head: ClothingHeadHelmetPovstanec
@@ -25,3 +25,4 @@
     - CheapLighter
     - Pickaxe
     - Torch
+    - SyringeOpium

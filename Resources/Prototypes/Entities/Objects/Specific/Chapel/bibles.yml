@@ -118,7 +118,7 @@
         Airloss: 15
     damageOnUntrainedUse:
       groups:
-        Burn: 10
+        Burn: 999999
     failChance: 0
     healSound: "/Audio/Effects/lightburn.ogg"
   - type: Summonable
@@ -128,3 +128,6 @@
     sprite: Afgan/Objects/koran.rsi
   - type: Item
     sprite: Afgan/Objects/koran.rsi
+  - type: Spellbook
+    spellActions:
+      ActionBlink: -1

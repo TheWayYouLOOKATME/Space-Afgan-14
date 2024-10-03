@@ -71,7 +71,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      150: Critical
+      175: Critical
       200: Dead
 
 

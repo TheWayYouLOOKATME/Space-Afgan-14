@@ -1409,3 +1409,15 @@
     sprite: Afgan/Clothing/Jumpsuit/shtany.rsi
   - type: Clothing
     sprite: Afgan/Clothing/Jumpsuit/shtany.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitPovstanKurtka
+  name: кожанная куртка
+  description: в такой ходят только повстанцы, знали?
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Jumpsuit/headpovstanec.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Jumpsuit/headpovstanec.rsi

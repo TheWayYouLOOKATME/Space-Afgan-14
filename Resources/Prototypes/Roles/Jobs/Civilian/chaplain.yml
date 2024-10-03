@@ -23,9 +23,8 @@
     belt: BibleKoran
     shoes: ClothingShoesBootsCombatFilled
     mask: ClothingMaskHamas
-    head: ClothingHeadHelmetBlack
+    head: ClothingHeadHelmetCherep
     gloves: ClothingHandsGlovesCombat
-    outerClothing: ClothingOuterVestStal
     id: SalvageIDCard
     pocket1: RadioHandheld
     pocket2: Torch
@@ -37,4 +36,6 @@
     - Scalpel
     - Saw
     - Retractor
-    - Syringe
+    - SyringeOpium
+    - SyringeOpium
+    - SyringeOpium

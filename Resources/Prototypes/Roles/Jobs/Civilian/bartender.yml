@@ -20,9 +20,8 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitTaliban
     back: ClothingBackpackSatchelLeather
-    eyes: ClothingEyesGlassesSunglasses
     shoes: ClothingShoesBootsCombatFilled
-    mask: ClothingMaskBalistic
+    mask: ClothingMaskHamas
     head: ClothingHeadHelmetAltin
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterVestPravitel

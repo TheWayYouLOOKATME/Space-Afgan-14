@@ -544,12 +544,11 @@
         damage:
           groups:
             Brute: -5
-#TODO: I NEED THIS SHIT LATER
-#      - !type:Polymorph
-#        prototype: ArtifactLizard
-#        conditions:
-#        - !type:OrganType
-#          type: Animal
-#          shouldHave: false
-#        - !type:ReagentThreshold
-#          min: 16
+      - !type:Polymorph
+        prototype: ArtifactOblezliy
+        conditions:
+          - !type:OrganType
+            type: Animal
+            shouldHave: false
+          - !type:ReagentThreshold
+            min: 30.9
