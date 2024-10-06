@@ -80,7 +80,8 @@ namespace Content.IntegrationTests.Tests
             "Atlas",
             "Reach",
             "Train",
-            "Oasis"
+            "Oasis",
+            "Afgan_gora"
         };
 
         /// <summary>

@@ -1,5 +1,5 @@
 - type: department
-  id: Civilian
+  id: Security
   description: department-Specific-description
   color: "#9FED58"
   roles:
@@ -24,10 +24,29 @@
   - Reporter
 
 - type: department
-  id: Security
+  id: Civilian
   description: department-Security-description
   color: "#EFB341"
   roles:
   - AtmosphericTechnician
 
+- type: department
+  id: Command
+  description: department-Specific-description
+  color: "#9FED58"
+  roles:
+  - AtmosphericTechnician
 
+- type: department
+  id: Medical
+  description: department-Specific-description
+  color: "#9FED58"
+  roles:
+  - AtmosphericTechnician
+
+- type: department
+  id: Cargo
+  description: department-Specific-description
+  color: "#9FED58"
+  roles:
+  - AtmosphericTechnician

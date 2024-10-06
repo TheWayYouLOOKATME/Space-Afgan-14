@@ -1,8 +1,8 @@
-department-Cargo = Отдел снабжения
-department-Civilian = Афган
-department-Command = Командование
-department-Engineering = Отбросы
-department-Medical = Медицинский отдел
-department-Security = Нейтралы
+department-Cargo = Вы
+department-Civilian = Все
+department-Command = Говно
+department-Engineering = Ёбанное,
+department-Medical = Сдохните
+department-Security = Афган
 department-Science = Повстанцы
-department-Specific = Афган
+department-Specific = иди нахуй

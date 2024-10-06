@@ -122,6 +122,13 @@
     state: mattress
   - type: Damageable
     damageModifierSet: Inflatable
+  - type: HealOnBuckle
+    damage:
+      types:
+        Poison: -0.2
+        Cold: -0.4
+        Blunt: -0.2
+        Burn: -0.2
 
 - type: entity
   parent: Bed

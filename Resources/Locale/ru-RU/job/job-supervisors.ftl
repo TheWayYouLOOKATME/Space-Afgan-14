@@ -13,3 +13,8 @@ job-supervisors-security = офицерам, смотрителю, и главе
 job-supervisors-science = учёным, научному руководителю
 job-supervisors-hire = Правителю Афганцев
 job-supervisors-everyone = АЛЛАХУ
+
+
+
+alerts-pacified-zone-name = Зона, где нельзя ебать баран
+alerts-pacified-zone-desc = Сука, кто будет с далека стрелять по этой зоне ебанной - чурка ебанная

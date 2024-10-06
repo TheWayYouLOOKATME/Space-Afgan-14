@@ -13,7 +13,8 @@
   supervisors: job-supervisors-everyone
   access:
   - Salvage
-  - Maintenance
+  - Command
+  - Quartermaster
 
 - type: startingGear
   id: BartenderGear

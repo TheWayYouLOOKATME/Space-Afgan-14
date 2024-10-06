@@ -3,14 +3,14 @@
   parent: MobMonkey
   id: MobSvin
   suffix: afgan14
-  description: Природа Афгана создала это... но зачем?
+  description: Природа Афгана создала это... но зачем? Это прирученная особь.
   components:
   - type: GhostRole
     prob: 1
     makeSentient: true
     allowSpeech: true
     allowMovement: true
-    name: свин
+    name: рабский свинолюд
     description: вы - рабский свинолюд, подчиняйтесь рабовладельцу
     rules: вы - рабский свинолюд, подчиняйтесь рабовладельцу
   - type: GhostTakeoverAvailable
@@ -188,3 +188,39 @@
     uiWindowPos: 1,0
     strippingWindowPos: 1,3
     displayName: Shoes
+
+
+- type: entity
+  name: дикий свинолюд
+  parent: MobSvin
+  id: MobSvinAngry
+  suffix: afgan14
+  description: Природа Афгана создала это... но зачем? Он явно одичал.
+  components:
+  - type: GhostRole
+    prob: 1
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: дикий свинолюд
+    description: вы - дикий свинолюд, убивайте всех, кто не вашей крови и выживайте вместе со своим племенем
+    rules: вы - дикий свинолюд, убивайте всех, кто не вашей крови и выживайте вместе со своим племенем
+  - type: GhostTakeoverAvailable
+  - type: NpcFactionMember
+    factions:
+    - Svin
+
+- type: entity
+  name: Svin Angry Spawner
+  suffix: afgan14
+  id: SpawnMobSvinAngry
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - state: svin
+      sprite: Afgan/Mobs/svin.rsi
+  - type: ConditionalSpawner
+    prototypes:
+    - MobSvinAngry

@@ -133,7 +133,7 @@
   components:
   - type: FlavorProfile
     flavors:
-      - meaty
+      - shit
   - type: Tag
     tags:
     - Raw
@@ -195,7 +195,7 @@
     state: icon
   - type: Item
     sprite: Afgan/Objects/radio.rsi
-    size: Large
+    size: Ginormous
   - type: EmitSoundOnUse
     sound:
       collection: Radio
@@ -204,3 +204,4 @@
       collection: Radio
   - type: UseDelay
     delay: 190.0
+  - type: MultiHandedItem

@@ -16,6 +16,7 @@ flavor-base-bitter = горько
 flavor-base-spicy = остро
 flavor-base-metallic = металлически
 flavor-base-meaty = мясисто
+flavor-base-shit = говнисто
 flavor-base-fishy = рыбно
 flavor-base-crabby = крабово
 flavor-base-cheesy = сырно

@@ -18,7 +18,7 @@
     speechVerb: Oblezliy
   - type: NpcFactionMember
     factions:
-    - Syndicate
+    - PrirodaAfgana
   - type: NameIdentifier
     group: Oblezliy
   - type: MobsterAccent
@@ -81,7 +81,7 @@
     - type: TimedSpawner
       prototypes:
       - MobOblezliy
-      chance: 0.20
+      chance: 0.15
       intervalSeconds: 100
       minimumEntitiesSpawned: 1
       maximumEntitiesSpawned: 1
