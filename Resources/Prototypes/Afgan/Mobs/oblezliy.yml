@@ -1,0 +1,87 @@
+- type: entity
+  name: облезлый
+  parent: MobSvin
+  id: MobOblezliy
+  suffix: afgan14
+  description: Ранее он был человеком, который не сумел укрыться во время Великой Бури, за что и поплатился.
+  components:
+  - type: GhostRole
+    prob: 1
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: облезлый
+    description: Ранее он был человеком, который не сумел укрыться во время Великой Бури, за что и поплатился.
+    rules: выживайте. убивайте. мстите.
+  - type: Speech
+    speechSounds: Oblezliy
+    speechVerb: Oblezliy
+  - type: NpcFactionMember
+    factions:
+    - PrirodaAfgana
+  - type: NameIdentifier
+    group: Oblezliy
+  - type: MobsterAccent
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: bob
+      sprite: Afgan/Mobs/oblezliy.rsi
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Afgan/shit.ogg
+    angle: 30
+    animation: WeaponArcFist
+    attackRate: 3
+    damage:
+      types:
+        Blunt: 5
+        Slash: 1
+  - type: Inventory
+    templateId: human
+    speciesId: human
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 40
+    baseSprintSpeed : 45
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      100: Critical
+      125: Dead
+
+- type: entity
+  name: Oblezliy Spawner
+  suffix: afgan14
+  id: SpawnMobOblezliy
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - state: bob
+      sprite: Afgan/Mobs/oblezliy.rsi
+  - type: ConditionalSpawner
+    prototypes:
+    - MobOblezliy
+
+- type: entity
+  name: Oblezliy Timed Spawner
+  id: OblezliyTimedSpawner
+  parent: MarkerBase
+  suffix: afgan14
+  components:
+    - type: Sprite
+      layers:
+      - state: blue
+      - sprite: Afgan/Mobs/oblezliy.rsi
+        state: bob
+      - state: ai
+    - type: Timer
+    - type: TimedSpawner
+      prototypes:
+      - MobOblezliy
+      chance: 0.15
+      intervalSeconds: 100
+      minimumEntitiesSpawned: 1
+      maximumEntitiesSpawned: 1

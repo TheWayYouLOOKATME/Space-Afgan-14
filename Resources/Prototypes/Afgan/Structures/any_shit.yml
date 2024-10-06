@@ -133,7 +133,7 @@
   components:
   - type: FlavorProfile
     flavors:
-      - meaty
+      - shit
   - type: Tag
     tags:
     - Raw
@@ -182,3 +182,26 @@
       - FoodKakashka
       chance: 1
       offset: 0.2
+
+- type: entity
+  parent: BaseItem
+  id: AfganRadio
+  name: старое радио
+  description: на нём записаны 5 песен гражданской обороны.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Objects/radio.rsi
+    state: icon
+  - type: Item
+    sprite: Afgan/Objects/radio.rsi
+    size: Ginormous
+  - type: EmitSoundOnUse
+    sound:
+      collection: Radio
+  - type: EmitSoundOnTrigger
+    sound:
+      collection: Radio
+  - type: UseDelay
+    delay: 190.0
+  - type: MultiHandedItem

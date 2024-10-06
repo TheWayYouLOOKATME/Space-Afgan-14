@@ -2,6 +2,7 @@
   id: SeniorResearcher
   name: job-name-senior-researcher
   description: job-description-senior-researcher
+  setPreference: false
   playTimeTracker: JobSeniorResearcher
   requirements:
     - !type:DepartmentTimeRequirement

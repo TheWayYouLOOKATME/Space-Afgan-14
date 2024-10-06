@@ -56,7 +56,7 @@
   showInVote: true
   description: secret-description
   rules:
-    - Secret
+    - BasicRoundstartVariation
 
 - type: gamePreset
   id: SecretExtended #For Admin Use: Runs Extended but shows "Secret" in lobby.
@@ -67,7 +67,7 @@
   description: secret-description
   rules:
     - BasicStationEventScheduler
-    - GameRuleMeteorScheduler
+
 
 - type: gamePreset
   id: SecretGreenshift #For Admin Use: Runs Greenshift but shows "Secret" in lobby.

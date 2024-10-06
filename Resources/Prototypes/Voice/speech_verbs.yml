@@ -164,3 +164,15 @@
   - chat-speech-verb-electricity-1
   - chat-speech-verb-electricity-2
   - chat-speech-verb-electricity-3
+
+- type: speechVerb
+  id: PigWar
+  name: chat-speech-verb-name-pigwar
+  speechVerbStrings:
+  - chat-speech-verb-pigwar-strong
+
+- type: speechVerb
+  id: Oblezliy
+  name: chat-speech-verb-name-oblezliy
+  speechVerbStrings:
+  - chat-speech-verb-oblezliy-strong

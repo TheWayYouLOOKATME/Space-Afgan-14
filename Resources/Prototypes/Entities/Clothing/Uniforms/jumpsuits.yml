@@ -1373,3 +1373,51 @@
     sprite: Afgan/Clothing/Jumpsuit/rab.rsi
   - type: Clothing
     sprite: Afgan/Clothing/Jumpsuit/rab.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitTaliban
+  name: аристакратичный костюм
+  description: раньше его носили выжные персоны Талибана.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Jumpsuit/taliban.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Jumpsuit/taliban.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitPovstan
+  name: повстанческий камиз
+  description: удобный и символичный.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Jumpsuit/povstanec.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Jumpsuit/povstanec.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitShtany
+  name: штаны оборванца
+  description: дырявые, залатанные, изношенные штаны, присущие оборванцу.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Jumpsuit/shtany.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Jumpsuit/shtany.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitPovstanKurtka
+  name: кожанная куртка
+  description: в такой ходят только повстанцы, знали?
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Jumpsuit/headpovstanec.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Jumpsuit/headpovstanec.rsi

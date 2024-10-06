@@ -5,22 +5,27 @@
   playTimeTracker: JobBotanist
   startingGear: BotanistGear
   icon: "JobIconBotanist"
-  supervisors: job-supervisors-hop
+  supervisors: job-supervisors-hire
   access:
-  - Service
-  - Maintenance
-  - Hydroponics
-  extendedAccess:
-  - Kitchen
-  - Bar
+  - Salvage
 
 - type: startingGear
   id: BotanistGear
   equipment:
-    shoes: ClothingShoesColorBrown
-    id: BotanistPDA
-    ears: ClothingHeadsetService
-    belt: ClothingBeltPlantFilled
-  #storage:
-    #back:
-    #- Stuff
+    jumpsuit: ClothingUniformJumpsuitTaliban
+    back: ClothingBackpackSatchelLeather
+    shoes: ClothingShoesBootsCombatFilled
+    mask: ClothingMaskBalistic
+    head: ClothingHeadHatTaliban
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterVestWebMerc
+    suitstorage: WeaponSubMachineGunLuty
+    id: SalvageIDCard
+    pocket1: RadioHandheld
+    pocket2: Torch
+  storage:
+    back:
+    - BaseMagazineLuty20
+    - BaseMagazineLuty20
+    - BaseMagazineLuty20
+    - FlippoEngravedLighter

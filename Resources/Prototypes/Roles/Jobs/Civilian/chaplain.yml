@@ -2,13 +2,14 @@
   id: Chaplain
   name: job-name-chaplain
   description: job-description-chaplain
+  canBeAntag: false
   playTimeTracker: JobChaplain
   startingGear: ChaplainGear
   icon: "JobIconChaplain"
-  supervisors: job-supervisors-hop
+  supervisors: job-supervisors-hire
   access:
   - Chapel
-  - Maintenance
+  - Salvage
   special:
   - !type:AddComponentSpecial
     components:
@@ -17,10 +18,24 @@
 - type: startingGear
   id: ChaplainGear
   equipment:
-    shoes: ClothingShoesColorBlack
-    id: ChaplainPDA
-    ears: ClothingHeadsetService
+    jumpsuit: ClothingUniformJumpsuitHamas
+    back: ClothingBackpackSatchelMedical
+    belt: BibleKoran
+    shoes: ClothingShoesBootsCombatFilled
+    mask: ClothingMaskHamas
+    head: ClothingHeadHelmetCherep
+    gloves: ClothingHandsGlovesCombat
+    id: SalvageIDCard
+    pocket1: RadioHandheld
+    pocket2: Torch
   storage:
     back:
-    - Bible
-    - RubberStampChaplain
+    - DrapesItem
+    - Hemostat
+    - Cautery
+    - Scalpel
+    - Saw
+    - Retractor
+    - SyringeOpium
+    - SyringeOpium
+    - SyringeOpium

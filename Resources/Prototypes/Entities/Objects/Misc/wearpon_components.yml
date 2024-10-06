@@ -6,7 +6,7 @@
   suffix: afgan14
   components:
   - type: Sprite
-    sprite: Objects\Weapons\Сomponents\rukoiatmp9.rsi
+    sprite: Afgan/Objects/Сomponents/mp2.rsi
     state: icon
   - type: Item
     size: Small
@@ -22,7 +22,7 @@
   suffix: afgan14
   components:
   - type: Sprite
-    sprite: Objects\Weapons\Сomponents\detalimp9.rsi
+    sprite: Afgan/Objects/Сomponents/detali.rsi
     state: icon
   - type: Item
     size: Small
@@ -38,7 +38,7 @@
   suffix: afgan14
   components:
   - type: Sprite
-    sprite: Objects\Weapons\Сomponents\korpusmp9.rsi
+    sprite: Afgan/Objects/Сomponents/mp1.rsi
     state: icon
   - type: Item
     size: Normal
@@ -54,7 +54,7 @@
   suffix: afgan14
   components:
   - type: Sprite
-    sprite: Objects\Weapons\Сomponents\korpusluty.rsi
+    sprite: Afgan/Objects/Сomponents/luty1.rsi
     state: icon
   - type: Item
     size: Normal
@@ -70,10 +70,42 @@
   suffix: afgan14
   components:
   - type: Sprite
-    sprite: Objects\Weapons\Сomponents\rukoiatluty.rsi
+    sprite: Afgan/Objects/Сomponents/luty2.rsi
     state: icon
   - type: Item
     size: Small
   - type: Tag
     tags:
       - RukoiatLuty
+
+- type: entity
+  id: WearponComponentAK1
+  parent: BaseItem
+  name: самодельный ствол и газблок АК74
+  description: самоделка.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Objects/AK-parts/ak74-2part.rsi
+    state: icon
+  - type: Item
+    size: Normal
+  - type: Tag
+    tags:
+      - AKpart1
+
+- type: entity
+  id: WearponComponentAK2
+  parent: BaseItem
+  name: корпус АК74
+  description: самоделка.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Objects/AK-parts/ak74-1part.rsi
+    state: icon
+  - type: Item
+    size: Normal
+  - type: Tag
+    tags:
+      - AKpart2

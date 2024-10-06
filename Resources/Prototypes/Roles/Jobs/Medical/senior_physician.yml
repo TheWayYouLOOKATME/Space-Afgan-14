@@ -2,6 +2,7 @@
   id: SeniorPhysician
   name: job-name-senior-physician
   description: job-description-senior-physician
+  setPreference: false
   playTimeTracker: JobSeniorPhysician
   requirements:
     - !type:RoleTimeRequirement

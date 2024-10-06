@@ -1,0 +1,11 @@
+- type: entity
+  parent: ClothingHeadBaseButcherable
+  id: ClothingHeadHatTaliban
+  suffix: afgan14
+  name: аристократическая куфия
+  description: возможно это та самая куфия Осамы...?
+  components:
+    - type: Sprite
+      sprite: Afgan/Clothing/Head/talibanhat.rsi
+    - type: Clothing
+      sprite: Afgan/Clothing/Head/talibanhat.rsi

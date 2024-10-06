@@ -100,3 +100,68 @@
         doAfter: 5
   - node: armor
     entity: ClothingOuterVestStal
+
+- type: constructionGraph
+  id: MaskGraph
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: mask
+          steps:
+            - tag: Izolenta
+              icon:
+                sprite: Objects/Trash/trash5.rsi
+                state: icon
+              name: изолента
+            - material: Steel
+              amount: 15
+              doAfter: 8
+    - node: mask
+      entity: ClothingMaskBalistic
+
+- type: constructionGraph
+  id: AKGraph
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: ak
+          steps:
+            - tag: AKpart2
+              icon:
+                sprite: Afgan/Objects/AK-parts/ak74-1part.rsi
+                state: icon
+              name: корпус ак74
+            - tag: AKpart1
+              icon:
+                sprite: Afgan/Objects/AK-parts/ak74-2part.rsi
+                state: icon
+              name: самодельный газблок и ствол
+            - material: WoodPlank
+              amount: 30
+              doAfter: 10
+    - node: ak
+      entity: WeaponRifleAKSamodel
+
+- type: constructionGraph
+  id: AltinGraph
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: altin
+      steps:
+      - tag: BlackHemelet
+        icon:
+          sprite: Afgan/Clothing/Head/bhemelet.rsi
+          state: icon
+        name: стальной шлем
+      - tag: WeldingMask
+        icon:
+          sprite: Clothing/Head/Welding/welding.rsi
+          state: icon
+        name: сварочная маска
+        doAfter: 5
+  - node: altin
+    entity: ClothingHeadHelmetAltin

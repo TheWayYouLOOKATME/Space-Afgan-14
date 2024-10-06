@@ -6,7 +6,8 @@
   suffix: afgan14
   components:
   - type: Sprite
-    sprite: Afgan\Weapons\Guns\Snipers\pipegun.rsi
+    sprite: Afgan\Weapons\Guns\pipe.rsi
+    state: icon
     scale: "0.5, 0.5"
   - type: Clothing
     sprite: Objects\Weapons\Guns\Snipers\bolt_gun_wood.rsi

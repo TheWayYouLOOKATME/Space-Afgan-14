@@ -3,6 +3,7 @@
   description: A handy handheld radio.
   parent: BaseItem
   id: RadioHandheld
+  suffix: afgan14
   components:
   - type: TelecomExempt
   - type: RadioMicrophone

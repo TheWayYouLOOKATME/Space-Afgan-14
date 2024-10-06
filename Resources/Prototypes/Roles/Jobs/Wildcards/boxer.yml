@@ -2,21 +2,27 @@
   id: Boxer
   name: job-name-boxer
   description: job-description-boxer
+  canBeAntag: false
   playTimeTracker: JobBoxer
   startingGear: BoxerGear
   icon: "JobIconBoxer"
   supervisors: job-supervisors-hop
   access:
   - Service
-  - Maintenance
 
 - type: startingGear
   id: BoxerGear
   equipment:
-    id: BoxerPDA
-    ears: ClothingHeadsetService
-    shoes: ClothingShoesColorRed
-    belt: ClothingBeltChampion
-  #storage:
-    #back:
-    #- Stuff
+    jumpsuit: ClothingUniformJumpsuitPovstanKurtka
+    back: ClothingBackpackSatchelLeather
+    shoes: ClothingShoesBootsSalvage
+    head: ClothingHeadHelmetPovstanec
+    gloves: ClothingHandsGlovesMercFingerless
+    pocket1: RadioHandheldSecurity
+    pocket2: CombatKnife
+  storage:
+    back:
+    - CheapLighter
+    - Pickaxe
+    - Torch
+    - SyringeOpium

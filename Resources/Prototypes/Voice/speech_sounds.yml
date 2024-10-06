@@ -159,3 +159,21 @@
     path: /Audio/Animals/chicken_cluck_happy.ogg
   exclaimSound:
     path: /Audio/Animals/chicken_cluck_happy.ogg
+
+- type: speechSounds
+  id: PigWar
+  saySound:
+    path: /Audio/Afgan/Mobs/Svin/talk.ogg
+  askSound:
+    path: /Audio/Afgan/Mobs/Svin/ask.ogg
+  exclaimSound:
+    path: /Audio/Afgan/Mobs/Svin/scream.ogg
+
+- type: speechSounds
+  id: Oblezliy
+  saySound:
+    path: /Audio/Afgan/Mobs/Oblezliy/talk.ogg
+  askSound:
+    path: /Audio/Afgan/Mobs/Oblezliy/ask.ogg
+  exclaimSound:
+    path: /Audio/Afgan/Mobs/Oblezliy/scream.ogg

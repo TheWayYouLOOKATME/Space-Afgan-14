@@ -1,4 +1,4 @@
-ent-RadioHandheld = портативная рация
-    .desc = Удобная портативная рация.
-ent-RadioHandheldSecurity = рация охраны
-    .desc = Удобная рация охраны.
+ent-RadioHandheld = рация афганцев
+    .desc = Для переговоров.
+ent-RadioHandheldSecurity = рация повстанцев
+    .desc = Её используют для коммуникации при набегах на афганцев.

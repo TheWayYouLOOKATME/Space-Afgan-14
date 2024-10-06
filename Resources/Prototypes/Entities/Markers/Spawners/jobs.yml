@@ -80,6 +80,7 @@
 - type: entity
   id: SpawnPointPassenger
   parent: SpawnPointJobBase
+  suffix: afgan14
   name: passenger
   components:
   - type: SpawnPoint
@@ -152,6 +153,7 @@
 - type: entity
   id: SpawnPointBartender
   parent: SpawnPointJobBase
+  suffix: afgan14
   name: bartender
   components:
   - type: SpawnPoint
@@ -176,6 +178,7 @@
 - type: entity
   id: SpawnPointBotanist
   parent: SpawnPointJobBase
+  suffix: afgan14
   name: botanist
   components:
   - type: SpawnPoint
@@ -213,6 +216,7 @@
   id: SpawnPointChaplain
   parent: SpawnPointJobBase
   name: chaplain
+  suffix: afgan14
   components:
   - type: SpawnPoint
     job_id: Chaplain
@@ -272,6 +276,7 @@
 - type: entity
   id: SpawnPointBoxer
   parent: SpawnPointJobBase
+  suffix: afgan14
   name: boxer
   components:
   - type: SpawnPoint
@@ -352,6 +357,7 @@
   id: SpawnPointAtmos
   parent: SpawnPointJobBase
   name: atmospherics
+  suffix: afgan14
   components:
   - type: SpawnPoint
     job_id: AtmosphericTechnician
@@ -575,6 +581,7 @@
 - type: entity
   id: SpawnPointReporter
   parent: SpawnPointJobBase
+  suffix: afgan14
   name: reporter
   components:
   - type: SpawnPoint

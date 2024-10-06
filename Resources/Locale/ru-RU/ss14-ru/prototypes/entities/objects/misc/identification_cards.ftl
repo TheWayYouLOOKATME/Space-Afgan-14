@@ -1,5 +1,5 @@
-ent-IDCardStandard = ID карта
-    .desc = Карта, необходимая для доступа в различные области станции.
+ent-IDCardStandard = жетон
+    .desc = по нему можно попасть на базу афганцев
 ent-PassengerIDCard = ID карта пассажира
     .desc = { ent-IDCardStandard.desc }
 ent-TechnicalAssistantIDCard = ID карта ассистента-техника
@@ -28,7 +28,7 @@ ent-ChemistIDCard = ID карта химика
     .desc = { ent-IDCardStandard.desc }
 ent-CargoIDCard = ID карта грузчика
     .desc = { ent-IDCardStandard.desc }
-ent-SalvageIDCard = ID карта утилизатора
+ent-SalvageIDCard = жетонц афганца
     .desc = { ent-IDCardStandard.desc }
 ent-QuartermasterIDCard = ID карта квартирмейстера
     .desc = { ent-IDCardStandard.desc }

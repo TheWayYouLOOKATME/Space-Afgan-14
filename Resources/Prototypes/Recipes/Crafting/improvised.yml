@@ -268,3 +268,42 @@
     sprite: Afgan/Clothing/Armor/samodel.rsi
     state: icon
   objectType: Item
+
+- type: construction
+  name: Самодельная баллистическая маска
+  id: SamodelMask
+  graph: MaskGraph
+  startNode: start
+  targetNode: mask
+  category: construction-category-weapons
+  description: real mask
+  icon:
+    sprite: Afgan/Clothing/Mask/balmask.rsi
+    state: icon
+  objectType: Item
+
+- type: construction
+  name: Самодельный АК-74
+  id: SamodelAK
+  graph: AKGraph
+  startNode: start
+  targetNode: ak
+  category: construction-category-weapons
+  description: real ak
+  icon:
+    sprite: Afgan/Weapons/Guns/Rifels/samodel_AK.rsi
+    state: icon
+  objectType: Item
+
+- type: construction
+  name: Алтын
+  id: SamodeAltin
+  graph: AltinGraph
+  startNode: start
+  targetNode: altin
+  category: construction-category-weapons
+  description: real altin
+  icon:
+    sprite: Afgan/Clothing/Head/altin.rsi
+    state: icon
+  objectType: Item

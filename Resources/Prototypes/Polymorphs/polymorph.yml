@@ -197,3 +197,16 @@
     forced: true
     revertOnCrit: false
     revertOnDeath: false
+
+- type: polymorph
+  id: ArtifactOblezliy
+  configuration:
+    entity: MobOblezliy
+    forced: true
+    transferName: true
+    transferDamage: true
+    transferHumanoidAppearance: true
+    inventory: None
+    revertOnDeath: true
+    revertOnCrit: true
+    duration: 3
