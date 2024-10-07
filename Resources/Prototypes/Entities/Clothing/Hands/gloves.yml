@@ -438,3 +438,29 @@
     fiberMaterial: fibers-rubber
     fiberColor: fibers-yellow
   - type: FingerprintMask
+
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsGlovesStal
+  name: стальный наручи
+  description: прям как в средние века.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Gloves/steel.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Gloves/steel.rsi
+  - type: Fiber
+    fiberMaterial: fibers-durathread
+    fiberColor: fibers-black
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.95
+        Slash: 0.9
+        Piercing: 0.95
+  - type: FingerprintMask
+  - type: ClothingSpeedModifier
+    walkModifier: 0.98
+    sprintModifier: 0.98

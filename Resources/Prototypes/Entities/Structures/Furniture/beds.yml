@@ -125,10 +125,10 @@
   - type: HealOnBuckle
     damage:
       types:
-        Poison: -0.2
+        Poison: -0.4
         Cold: -0.4
-        Blunt: -0.2
-        Burn: -0.2
+        Blunt: -0.5
+        Heat: -0.4
 
 - type: entity
   parent: Bed
