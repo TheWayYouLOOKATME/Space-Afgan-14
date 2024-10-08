@@ -843,3 +843,45 @@
         settings: short
     - type: Loadout
       prototypes: [ SyndicateOperativeGearCivilian ]
+
+#НАШЕ
+
+- type: entity
+  id: RandomHumanoidSpawnerRab
+  name: раб
+  suffix: afgan14
+  components:
+    - type: Sprite
+      sprite: Afgan/Clothing/Jumpsuit/rab.rsi
+      state: icon
+    - type: RandomMetadata
+      nameSegments:
+        - names_rab
+        - names_rab_title
+    - type: RandomHumanoidSpawner
+      settings: Rab
+    - type: RandomHumanoidAppearance
+      randomizeName: false
+      hair: HairBald
+
+- type: randomHumanoidSettings
+  id: Rab
+  parent: EventHumanoid
+  randomizeName: false
+  speciesBlacklist: ['Diona']
+  components:
+    - type: GhostRole
+      name: раб
+      description: выкопайте себе свободу
+      rules: подчиняйтесь рабовладельцу. Осуществлять попытки побега можно (даже нужно)
+    - type: Loadout
+      prototypes: [ RabGear ]
+    - type: RandomMetadata
+      nameSegments:
+        - names_rab
+        - names_rab_title
+
+- type: startingGear
+  id: RabGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitRab
