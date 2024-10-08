@@ -83,6 +83,9 @@
   - type: Construction
     graph: AltinGraph
     node: altin
+  - type: ClothingSpeedModifier
+    walkModifier: 0.97
+    sprintModifier: 0.97
 
 - type: entity
   parent: ClothingHeadHelmetBasic

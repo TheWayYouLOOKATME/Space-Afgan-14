@@ -27,7 +27,7 @@
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterVestPravitel
     suitstorage: WeaponRifleAKSamodel
-    id: SalvageIDCard
+    id: CentcomIDCard
     pocket1: RadioHandheld
     pocket2: Torch
   storage:
