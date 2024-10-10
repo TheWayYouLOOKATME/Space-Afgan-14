@@ -378,3 +378,10 @@
   completetime: 6
   materials:
     Steel: 1000
+
+- type: latheRecipe
+  id: Naplechniki
+  result: ClothingNeckNaplechniki
+  completetime: 6
+  materials:
+    Steel: 500

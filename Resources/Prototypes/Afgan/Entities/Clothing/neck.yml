@@ -1,0 +1,18 @@
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckNaplechniki
+  name: стальные наплечники
+  description: сделано из стали.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Neck/stal.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.95
+  - type: ClothingSpeedModifier
+    walkModifier: 0.99
+    sprintModifier: 0.99

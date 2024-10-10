@@ -454,6 +454,7 @@
   - type: Fiber
     fiberMaterial: fibers-durathread
     fiberColor: fibers-black
+  - type: Insulated
   - type: Armor
     modifiers:
       coefficients:

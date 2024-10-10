@@ -14,7 +14,7 @@
   id: PassengerGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitHamas
-    back: ClothingBackpackSatchelLeather
+    belt: ClothingBeltRPC
     shoes: ClothingShoesBootsCombatFilled
     mask: ClothingMaskHamas
     head: ClothingHeadHelmetHamas
@@ -24,7 +24,7 @@
     pocket1: RadioHandheld
     pocket2: Torch
   storage:
-    back:
+    belt:
     - BaseMagazineMP9evil
     - BaseMagazineMP9evil
     - BaseMagazineMP9evil

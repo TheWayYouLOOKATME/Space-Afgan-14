@@ -21,10 +21,11 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitTaliban
     back: ClothingBackpackSatchelLeather
-    shoes: ClothingShoesBootsCombatFilled
+    shoes: ClothingShoesBootsSteel
+    neck: ClothingNeckNaplechniki
     mask: ClothingMaskHamas
     head: ClothingHeadHelmetAltin
-    gloves: ClothingHandsGlovesCombat
+    gloves: ClothingHandsGlovesStal
     outerClothing: ClothingOuterVestPravitel
     suitstorage: WeaponRifleAKSamodel
     id: CentcomIDCard

@@ -205,3 +205,25 @@
   - type: UseDelay
     delay: 190.0
   - type: MultiHandedItem
+
+- type: entity
+  parent: PosterBase
+  id: FlagAfgan
+  name: флаг Афгана
+  description: священный флаг.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Structures/flag.rsi
+    state: afgan
+
+- type: entity
+  parent: PosterBase
+  id: FlagPovstans
+  name: флаг Повстанцев
+  description: флаг повстанческого движения.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Structures/flagpov.rsi
+    state: base

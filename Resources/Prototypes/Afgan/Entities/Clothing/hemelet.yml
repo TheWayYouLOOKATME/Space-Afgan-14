@@ -16,6 +16,9 @@
         Slash: 0.8
         Piercing: 0.8
         Heat: 0.9
+  - type: ClothingSpeedModifier
+    walkModifier: 0.99
+    sprintModifier: 0.99
 
 - type: entity
   parent: ClothingHeadHelmetBasic
@@ -38,6 +41,9 @@
         Slash: 0.9
         Piercing: 0.9
         Heat: 0.9
+  - type: ClothingSpeedModifier
+    walkModifier: 0.99
+    sprintModifier: 0.99
 
 - type: entity
   parent: ClothingHeadHelmetBasic
@@ -57,6 +63,9 @@
         Slash: 0.85
         Piercing: 0.8
         Heat: 0.9
+  - type: ClothingSpeedModifier
+    walkModifier: 0.99
+    sprintModifier: 0.99
 
 - type: entity
   parent: ClothingHeadHelmetBasic
@@ -105,3 +114,6 @@
         Slash: 0.85
         Piercing: 0.8
         Heat: 0.9
+  - type: ClothingSpeedModifier
+    walkModifier: 0.99
+    sprintModifier: 0.99
