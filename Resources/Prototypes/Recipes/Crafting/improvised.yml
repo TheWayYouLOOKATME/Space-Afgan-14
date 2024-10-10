@@ -252,8 +252,8 @@
   category: construction-category-weapons
   description: real pipe
   icon:
-    sprite: Afgan/Weapons/Guns/Snipers/pipegun.rsi
-    state: icon
+    sprite: Objects/Weapons/Guns/Snipers/bolt_gun_wood.rsi
+    state: base
   objectType: Item
 
 - type: construction
