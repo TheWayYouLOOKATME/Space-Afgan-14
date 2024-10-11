@@ -75,7 +75,7 @@
       200: Dead
 
 - type: entity
-  name: Svin Timed Spawner
+  name: Svin Angry Timed Spawner
   id: SvinTimedSpawner
   parent: MarkerBase
   suffix: afgan14
@@ -89,7 +89,7 @@
     - type: Timer
     - type: TimedSpawner
       prototypes:
-      - MobSvin
+      - MobSvinAngry
       chance: 0.5
       intervalSeconds: 110
       minimumEntitiesSpawned: 1
