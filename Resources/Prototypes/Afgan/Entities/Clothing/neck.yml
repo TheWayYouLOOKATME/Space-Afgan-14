@@ -16,3 +16,5 @@
   - type: ClothingSpeedModifier
     walkModifier: 0.99
     sprintModifier: 0.99
+  - type: Reflect
+    reflectProb: 0.02

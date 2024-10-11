@@ -307,3 +307,29 @@
     sprite: Afgan/Clothing/Head/altin.rsi
     state: icon
   objectType: Item
+
+- type: construction
+  name: Кевларовый Бронежилет
+  id: SamodelBronik
+  graph: BronikGraph
+  startNode: start
+  targetNode: bronik
+  category: construction-category-weapons
+  description: real bronik. Ткань можно получить, убивая тканежуков.
+  icon:
+    sprite: Clothing/OuterClothing/Vests/webvest.rsi
+    state: icon
+  objectType: Item
+
+- type: construction
+  name: Укреплённый Кевларовый Бронежилет
+  id: SamodelUkrepBronik
+  graph: UkrepBronikGraph
+  startNode: start
+  targetNode: ukrepbronik
+  category: construction-category-weapons
+  description: real ukrep bronik. Ткань можно получить, убивая тканежуков.
+  icon:
+    sprite: Clothing/OuterClothing/Vests/mercwebvest.rsi
+    state: icon
+  objectType: Item

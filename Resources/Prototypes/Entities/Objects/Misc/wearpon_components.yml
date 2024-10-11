@@ -109,3 +109,19 @@
   - type: Tag
     tags:
       - AKpart2
+
+- type: entity
+  id: PlastinaKevlar
+  parent: BaseItem
+  name: кевларовая пластина
+  description: самоделка.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Objects/kevlar.rsi
+    state: icon
+  - type: Item
+    size: Large
+  - type: Tag
+    tags:
+      - Plastina

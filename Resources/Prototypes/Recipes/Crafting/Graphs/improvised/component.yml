@@ -8,17 +8,17 @@
       steps:
       - tag: RukoiatMP9Evil
         icon:
-          sprite: Objects\Weapons\Сomponents\rukoiatmp9.rsi
+          sprite: Afgan/Objects/Сomponents/mp2.rsi
           state: icon
         name: рукоять МП9
       - tag: DetaliMP9Evil
         icon:
-          sprite: Objects\Weapons\Сomponents\detalimp9.rsi
+          sprite: Afgan/Objects/Сomponents/detali.rsi
           state: icon
         name: детали для ПП
       - tag: KropusMP9Evil
         icon:
-          sprite: Objects\Weapons\Сomponents\korpusmp9.rsi
+          sprite: Afgan/Objects/Сomponents/mp1.rsi
           state: icon
         name: корпус МП9
         doAfter: 5
@@ -35,17 +35,17 @@
       steps:
       - tag: RukoiatLuty
         icon:
-          sprite: Objects\Weapons\Сomponents\rukoiatluty.rsi
+          sprite: Afgan/Objects/Сomponents/luty2.rsi
           state: icon
         name: рукоять МП9
       - tag: DetaliMP9Evil
         icon:
-          sprite: Objects\Weapons\Сomponents\detalimp9.rsi
+          sprite: Afgan/Objects/Сomponents/detali.rsi
           state: icon
         name: детали для ПП
       - tag: KropusLuty
         icon:
-          sprite: Objects\Weapons\Сomponents\korpusluty.rsi
+          sprite: Afgan/Objects/Сomponents/luty1.rsi
           state: icon
         name: корпус МП9
         doAfter: 5
@@ -165,3 +165,46 @@
         doAfter: 5
   - node: altin
     entity: ClothingHeadHelmetAltin
+
+- type: constructionGraph
+  id: BronikGraph
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: bronik
+          steps:
+            - tag: Plastina
+              icon:
+                sprite: Afgan/Objects/kevlar.rsi
+                state: icon
+              name: кевларовая пластина
+            - material: Cloth
+              amount: 20
+              doAfter: 10
+    - node: bronik
+      entity: ClothingOuterVestWeb
+
+- type: constructionGraph
+  id: UkrepBronikGraph
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: ukrepbronik
+          steps:
+            - tag: Plastina
+              icon:
+                sprite: Afgan/Objects/kevlar.rsi
+                state: icon
+              name: кевларовая пластина
+            - material: Cloth
+              amount: 10
+            - tag: Bronik
+              icon:
+                sprite: Clothing/OuterClothing/Vests/webvest.rsi
+                state: icon
+              name: Кевларовый бронежилет
+              doAfter: 10
+    - node: ukrepbronik
+      entity: ClothingOuterVestWebMerc

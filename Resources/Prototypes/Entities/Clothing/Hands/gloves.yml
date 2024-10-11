@@ -443,7 +443,7 @@
 - type: entity
   parent: ClothingHandsBase
   id: ClothingHandsGlovesStal
-  name: стальный наручи
+  name: стальные наручи
   description: прям как в средние века.
   suffix: afgan14
   components:
@@ -465,3 +465,5 @@
   - type: ClothingSpeedModifier
     walkModifier: 0.98
     sprintModifier: 0.98
+  - type: Reflect
+    reflectProb: 0.03

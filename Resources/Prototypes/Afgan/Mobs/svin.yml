@@ -74,7 +74,26 @@
       175: Critical
       200: Dead
 
-
+- type: entity
+  name: Svin Timed Spawner
+  id: SvinTimedSpawner
+  parent: MarkerBase
+  suffix: afgan14
+  components:
+    - type: Sprite
+      layers:
+      - state: blue
+      - sprite: Afgan/Mobs/svin.rsi
+        state: svin
+      - state: ai
+    - type: Timer
+    - type: TimedSpawner
+      prototypes:
+      - MobSvin
+      chance: 0.5
+      intervalSeconds: 110
+      minimumEntitiesSpawned: 1
+      maximumEntitiesSpawned: 1
 
 - type: entity
   name: Svin Spawner

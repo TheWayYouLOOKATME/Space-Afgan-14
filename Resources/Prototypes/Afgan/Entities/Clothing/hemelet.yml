@@ -19,6 +19,8 @@
   - type: ClothingSpeedModifier
     walkModifier: 0.99
     sprintModifier: 0.99
+  - type: Reflect
+    reflectProb: 0.05
 
 - type: entity
   parent: ClothingHeadHelmetBasic
@@ -44,6 +46,8 @@
   - type: ClothingSpeedModifier
     walkModifier: 0.99
     sprintModifier: 0.99
+  - type: Reflect
+    reflectProb: 0.03
 
 - type: entity
   parent: ClothingHeadHelmetBasic
@@ -66,6 +70,8 @@
   - type: ClothingSpeedModifier
     walkModifier: 0.99
     sprintModifier: 0.99
+  - type: Reflect
+    reflectProb: 0.05
 
 - type: entity
   parent: ClothingHeadHelmetBasic
@@ -95,6 +101,8 @@
   - type: ClothingSpeedModifier
     walkModifier: 0.97
     sprintModifier: 0.97
+  - type: Reflect
+    reflectProb: 0.07
 
 - type: entity
   parent: ClothingHeadHelmetBasic
@@ -117,3 +125,5 @@
   - type: ClothingSpeedModifier
     walkModifier: 0.99
     sprintModifier: 0.99
+  - type: Reflect
+    reflectProb: 0.05
