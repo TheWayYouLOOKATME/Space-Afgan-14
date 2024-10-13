@@ -14,15 +14,14 @@
   id: BoxerGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitPovstanKurtka
-    back: ClothingBackpackSatchelLeather
+    belt: ClothingBeltRPC
     shoes: ClothingShoesBootsSalvage
     head: ClothingHeadHelmetPovstanec
     gloves: ClothingHandsGlovesMercFingerless
     pocket1: RadioHandheldSecurity
     pocket2: CombatKnife
   storage:
-    back:
+    belt:
     - CheapLighter
-    - Pickaxe
     - Torch
     - SyringeOpium
