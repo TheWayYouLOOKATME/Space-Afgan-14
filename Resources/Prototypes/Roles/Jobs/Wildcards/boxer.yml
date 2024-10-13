@@ -23,6 +23,5 @@
   storage:
     belt:
     - CheapLighter
-    - Pickaxe
     - Torch
     - SyringeOpium
