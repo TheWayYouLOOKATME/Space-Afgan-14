@@ -261,3 +261,15 @@
     sprintModifier: 0.97
   - type: Reflect
     reflectProb: 0.03
+
+- type: entity
+  parent: ClothingShoesMilitaryBase
+  id: ClothingShoesBootsSandal
+  name: сандали
+  description: сандали из дерева.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Boots/sandali.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Boots/sandali.rsi

@@ -14,6 +14,7 @@
   color: "#EFB341"
   roles:
   - AtmosphericTechnician
+  - TechnicalAssistant
 
 - type: department
   id: Science
@@ -29,6 +30,7 @@
   color: "#EFB341"
   roles:
   - AtmosphericTechnician
+  - TechnicalAssistant
 
 - type: department
   id: Command
@@ -36,6 +38,7 @@
   color: "#9FED58"
   roles:
   - AtmosphericTechnician
+  - TechnicalAssistant
 
 - type: department
   id: Medical
@@ -43,6 +46,7 @@
   color: "#9FED58"
   roles:
   - AtmosphericTechnician
+  - TechnicalAssistant
 
 - type: department
   id: Cargo
@@ -50,3 +54,4 @@
   color: "#9FED58"
   roles:
   - AtmosphericTechnician
+  - TechnicalAssistant

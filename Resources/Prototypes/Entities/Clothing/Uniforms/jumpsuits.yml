@@ -1421,3 +1421,15 @@
     sprite: Afgan/Clothing/Jumpsuit/headpovstanec.rsi
   - type: Clothing
     sprite: Afgan/Clothing/Jumpsuit/headpovstanec.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitAlchem
+  name: майка и штаны
+  description: от них веет опиумом.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Clothing/Jumpsuit/alchem.rsi
+  - type: Clothing
+    sprite: Afgan/Clothing/Jumpsuit/alchem.rsi

@@ -10,7 +10,7 @@
       time: 0
   startingGear: AtmosphericTechnicianGear
   icon: "JobIconAtmosphericTechnician"
-  supervisors: job-supervisors-ce
+  supervisors: job-supervisors-everyone
   access:
   - Maintenance
 
