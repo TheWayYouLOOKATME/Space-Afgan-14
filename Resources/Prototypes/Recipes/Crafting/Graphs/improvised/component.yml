@@ -224,3 +224,19 @@
               doAfter: 6
     - node: mace
       entity: AfganMace
+
+- type: constructionGraph
+  id: SwordGraph
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: sword
+          steps:
+            - material: Steel
+              amount: 15
+            - material: WoodPlank
+              amount: 5
+              doAfter: 8
+    - node: sword
+      entity: AfganSword

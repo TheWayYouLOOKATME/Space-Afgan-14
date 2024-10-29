@@ -19,9 +19,11 @@
   - type: Item
     size: Normal
   - type: Clothing
-    quickEquip: true
+    quickEquip: false
     slots:
     - belt
+    equipSound:
+      path: /Audio/Items/unsheath.ogg
   - type: PhysicalComposition
     materialComposition:
       Wood: 250
@@ -31,3 +33,37 @@
   - type: Construction
     graph: MaceGraph
     node: mace
+
+
+- type: entity
+  name: меч
+  parent: BaseSword
+  id: AfganSword
+  description: припитан запахом вырезанных глоток.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Weapons/Melee/sword.rsi
+  - type: MeleeWeapon
+    attackRate: 1.5
+    damage:
+      types:
+        Slash: 13
+    soundHit:
+        path: /Audio/Weapons/bladeslice.ogg
+  - type: Reflect
+    enabled: true
+    reflectProb: .1
+    spread: 90
+  - type: Item
+    sprite: Afgan/Weapons/Melee/sword.rsi
+  - type: DisarmMalus
+  - type: Construction
+    graph: SwordGraph
+    node: sword
+  - type: Clothing
+    quickEquip: false
+    slots:
+    - belt
+    equipSound:
+      path: /Audio/Items/unsheath.ogg

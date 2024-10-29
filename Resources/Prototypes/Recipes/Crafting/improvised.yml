@@ -346,3 +346,16 @@
     sprite: Afgan/Weapons/Melee/mace.rsi
     state: icon
   objectType: Item
+
+- type: construction
+  name: Самодельный Меч
+  id: SamodelSword
+  graph: SwordGraph
+  startNode: start
+  targetNode: sword
+  category: construction-category-weapons
+  description: real sword. Robust wearpon.
+  icon:
+    sprite: Afgan/Weapons/Melee/sword.rsi
+    state: icon
+  objectType: Item
