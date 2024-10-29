@@ -9,3 +9,41 @@
       sprite: Afgan/Clothing/Head/talibanhat.rsi
     - type: Clothing
       sprite: Afgan/Clothing/Head/talibanhat.rsi
+
+- type: entity
+  parent: ClothingHeadBaseButcherable
+  id: ClothingHeadHatKKK
+  suffix: afgan14, SHITSPAWN
+  name: HAT OF THE GREAT WIZARD MAN BORN LEADER OF THE KU KLUX KLAN
+  description: I am the grand wizard 🧙‍♂️ man born leader of the Klu Klux Klan, ⬜ ✅ White sheets and pointy hats, beating niggers down with a baseball bat 👨🏿:🏏, I don’t drink 🍺 I don’t cuss ❌ I wanna ride on the front of the bus 🚌 I wanna eat where the white folk eat 👨🏻
+  components:
+    - type: Sprite
+      sprite: Afgan/Clothing/Head/kkk.rsi
+    - type: Clothing
+      sprite: Afgan/Clothing/Head/kkk.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0
+          Slash: 0
+          Piercing: 0
+          Heat: 0
+          Caustic: 0
+          Radiation: 0
+    - type: ExplosionResistance
+      damageCoefficient: 0
+    - type: PressureProtection
+      highPressureMultiplier: 0
+      lowPressureMultiplier: 2000
+    - type: HideLayerClothing
+      slots:
+      - Hair
+      - Snout
+      - HeadTop
+      - HeadSide
+    - type: EmitSoundOnUse
+      sound: "/Audio/Afgan/Music/Wizard.ogg"
+    - type: EmitSoundOnTrigger
+      sound: "/Audio/Afgan/Music/Wizard.ogg"
+    - type: UseDelay
+      delay: 36.0
