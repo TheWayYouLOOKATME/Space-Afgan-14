@@ -40,8 +40,6 @@
     layers:
     - map: [ "grinder" ]
       state: "juicer0"
-  - type: ApcPowerReceiver
-    powerLoad: 300
   - type: ItemSlots
     slots:
       beakerSlot:

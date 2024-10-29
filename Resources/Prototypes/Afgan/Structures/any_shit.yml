@@ -119,10 +119,12 @@
     price: 25
   - type: AmbientOnPowered
   - type: AmbientSound
-    volume: -15
-    range: 3
+    enabled: false
+    volume: -12
+    range: 7
     sound:
-      path: /Audio/Ambience/Objects/light_hum.ogg
+      path: /Audio/Afgan/Misc/lamp.ogg
+
 
 - type: entity
   name: дерьмо
