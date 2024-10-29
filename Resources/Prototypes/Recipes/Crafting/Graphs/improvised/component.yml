@@ -208,3 +208,19 @@
               doAfter: 10
     - node: ukrepbronik
       entity: ClothingOuterVestWebMerc
+
+- type: constructionGraph
+  id: MaceGraph
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: mace
+          steps:
+            - material: Steel
+              amount: 10
+            - material: WoodPlank
+              amount: 10
+              doAfter: 6
+    - node: mace
+      entity: AfganMace

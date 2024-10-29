@@ -333,3 +333,16 @@
     sprite: Clothing/OuterClothing/Vests/mercwebvest.rsi
     state: icon
   objectType: Item
+
+- type: construction
+  name: Самодельная Булава
+  id: SamodelMace
+  graph: MaceGraph
+  startNode: start
+  targetNode: mace
+  category: construction-category-weapons
+  description: real mace. Robust wearpon.
+  icon:
+    sprite: Afgan/Weapons/Melee/mace.rsi
+    state: icon
+  objectType: Item

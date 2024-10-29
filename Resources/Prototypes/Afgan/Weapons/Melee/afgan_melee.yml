@@ -1,0 +1,33 @@
+- type: entity
+  name: булава
+  parent: BaseItem
+  id: AfganMace
+  description: Разъебашить зубы неверующему? Легко!
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Weapons/Melee/mace.rsi
+    state: icon
+  - type: MeleeWeapon
+    wideAnimationRotation: -135
+    damage:
+      types:
+        Blunt: 18
+        Structural: 5
+    soundHit:
+      collection: MetalThud
+  - type: Item
+    size: Normal
+  - type: Clothing
+    quickEquip: true
+    slots:
+    - belt
+  - type: PhysicalComposition
+    materialComposition:
+      Wood: 250
+  - type: MeleeThrowOnHit
+  - type: StaminaDamageOnHit
+    damage: 11
+  - type: Construction
+    graph: MaceGraph
+    node: mace
