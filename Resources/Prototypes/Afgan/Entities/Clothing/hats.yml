@@ -14,7 +14,7 @@
   parent: ClothingHeadBaseButcherable
   id: ClothingHeadHatKKK
   suffix: afgan14, SHITSPAWN
-  name: HAT OF THE GREAT WIZARD MAN BORN LEADER OF THE KU KLUX KLAN
+  name: HAT OF THE GREAT WIZARD MAN BORN AS LEADER OF THE KU KLUX KLAN
   description: I am the grand wizard 🧙‍♂️ man born leader of the Klu Klux Klan, ⬜ ✅ White sheets and pointy hats, beating niggers down with a baseball bat 👨🏿:🏏, I don’t drink 🍺 I don’t cuss ❌ I wanna ride on the front of the bus 🚌 I wanna eat where the white folk eat 👨🏻
   components:
     - type: Sprite
@@ -24,14 +24,14 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0
-          Slash: 0
-          Piercing: 0
-          Heat: 0
-          Caustic: 0
-          Radiation: 0
+          Blunt: 0.01
+          Slash: 0.01
+          Piercing: 0.01
+          Heat: 0.01
+          Caustic: 0.01
+          Radiation: 0.01
     - type: ExplosionResistance
-      damageCoefficient: 0
+      damageCoefficient: 0.01
     - type: PressureProtection
       highPressureMultiplier: 0
       lowPressureMultiplier: 2000

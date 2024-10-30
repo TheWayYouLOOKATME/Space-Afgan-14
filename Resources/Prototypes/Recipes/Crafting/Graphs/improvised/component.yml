@@ -234,9 +234,25 @@
         - to: sword
           steps:
             - material: Steel
+              amount: 18
+            - material: WoodPlank
+              amount: 2
+              doAfter: 8
+    - node: sword
+      entity: AfganSword
+
+- type: constructionGraph
+  id: AlebardGraph
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: alebard
+          steps:
+            - material: Steel
               amount: 15
             - material: WoodPlank
               amount: 5
               doAfter: 8
-    - node: sword
-      entity: AfganSword
+    - node: alebard
+      entity: AfganAlebard

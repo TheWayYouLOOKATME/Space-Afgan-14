@@ -67,3 +67,37 @@
     - belt
     equipSound:
       path: /Audio/Items/unsheath.ogg
+
+- type: entity
+  name: Алебарда
+  parent: BaseSword
+  id: AfganAlebard
+  description: Мощное, но тяжелое оружие.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Weapons/Melee/alebard.rsi
+  - type: MeleeWeapon
+    attackRate: 0.5
+    damage:
+      types:
+        Slash: 15
+    soundHit:
+        path: /Audio/Afgan/Wearpons/Melee/chop.ogg
+  - type: Item
+    sprite: Afgan/Weapons/Melee/alebard.rsi
+  - type: Construction
+    graph: AlebardGraph
+    node: alebard
+  - type: Clothing
+    quickEquip: false
+    slots:
+    - back
+    equipSound:
+      path: /Audio/Items/unsheath.ogg
+  - type: Wieldable
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Slash: 10
+        Structural: 10

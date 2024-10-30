@@ -359,3 +359,16 @@
     sprite: Afgan/Weapons/Melee/sword.rsi
     state: icon
   objectType: Item
+
+- type: construction
+  name: Самодельная Алебарда
+  id: SamodelAlebard
+  graph: AlebardGraph
+  startNode: start
+  targetNode: alebard
+  category: construction-category-weapons
+  description: real alebard. Robust wearpon.
+  icon:
+    sprite: Afgan/Weapons/Melee/alebard.rsi
+    state: icon
+  objectType: Item

@@ -180,7 +180,7 @@
   - 0.01
   isSubfloor: true
   footstepSounds:
-    collection: FootstepAsteroid
+    collection: FootstepAfganSand
   heatCapacity: 10000
   weather: true
   indestructible: true
@@ -199,7 +199,7 @@
   - 1.0
   isSubfloor: true
   footstepSounds:
-    collection: FootstepAsteroid
+    collection: FootstepAfganSand
   heatCapacity: 10000
   weather: true
   indestructible: true
@@ -218,7 +218,7 @@
   - 0.01
   isSubfloor: true
   footstepSounds:
-    collection: FootstepAsteroid
+    collection: FootstepAfganSand
   heatCapacity: 10000
   weather: true
   indestructible: true
@@ -237,7 +237,7 @@
   - 0.01
   isSubfloor: true
   footstepSounds:
-    collection: FootstepAsteroid
+    collection: FootstepAfganMetall
   heatCapacity: 10000
   weather: true
   indestructible: true
