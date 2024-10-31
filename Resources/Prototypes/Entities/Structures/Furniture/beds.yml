@@ -125,12 +125,13 @@
   - type: HealOnBuckle
     damage:
       types:
-        Poison: -0.4
-        Cold: -0.4
-        Blunt: -0.5
-        Heat: -0.4
-        Piercing: -0.3
+        Poison: -0.2
+        Cold: -0.2
+        Blunt: -0.3
+        Heat: -0.3
+        Piercing: -0.2
         Slash: -0.3
+        Asphyxiation: -0.2
 
 - type: entity
   parent: Bed

@@ -9,6 +9,7 @@
     - Revolutionary
     - PrirodaAfgana
     - Svin
+    - Oblez
 
 - type: npcFaction
   id: NanoTrasen
@@ -20,6 +21,7 @@
   - Revolutionary
   - PrirodaAfgana
   - Svin
+  - Oblez
 
 - type: npcFaction
   id: Mouse
@@ -48,6 +50,7 @@
   - Revolutionary
   - PrirodaAfgana
   - Svin
+  - Oblez
 
 - type: npcFaction
   id: SimpleNeutral
@@ -62,6 +65,7 @@
   - Zombie
   - PrirodaAfgana
   - Svin
+  - Oblez
 
 - type: npcFaction
   id: Xeno
@@ -73,6 +77,8 @@
   - Zombie
   - Revolutionary
   - PrirodaAfgana
+  - Oblez
+  - Svin
 
 - type: npcFaction
   id: Zombie
@@ -86,6 +92,8 @@
   - Revolutionary
   - Xeno
   - PrirodaAfgana
+  - Oblez
+  - Svin
 
 - type: npcFaction
   id: Revolutionary
@@ -96,6 +104,7 @@
   - Dragon
   - PrirodaAfgana
   - Svin
+  - Oblez
 
 - type: npcFaction
   id: Svin
@@ -108,7 +117,23 @@
   - PetsNT
   - Revolutionary
   - Xeno
-  - PrirodaAfgana
+  - Zombie
+  - Oblez
+
+- type: npcFaction
+  id: Oblez
+  hostile:
+  - NanoTrasen
+  - SimpleNeutral
+  - SimpleHostile
+  - Syndicate
+  - Passive
+  - PetsNT
+  - Revolutionary
+  - Xeno
+  - Svin
+  - Dragon
+  - Zombie
 
 - type: npcFaction
   id: PrirodaAfgana
@@ -121,5 +146,5 @@
   - PetsNT
   - Revolutionary
   - Xeno
-  - Svin
   - Dragon
+  - Zombie

@@ -101,3 +101,4 @@
       types:
         Slash: 10
         Structural: 10
+  - type: UseDelay

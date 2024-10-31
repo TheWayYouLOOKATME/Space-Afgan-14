@@ -206,7 +206,6 @@
     transferName: true
     transferDamage: true
     transferHumanoidAppearance: true
-    inventory: None
+    inventory: Transfer
     revertOnDeath: true
     revertOnCrit: true
-    duration: 3
