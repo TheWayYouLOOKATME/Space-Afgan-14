@@ -125,3 +125,35 @@
   - type: Tag
     tags:
       - Plastina
+
+- type: entity
+  id: WearponComponentAK3
+  parent: BaseItem
+  name: детали калаша
+  description: самоделка.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Objects/AK-parts/ak74-3part.rsi
+    state: icon
+  - type: Item
+    size: Normal
+  - type: Tag
+    tags:
+      - AKpart3
+
+- type: entity
+  id: WearponComponentPricel
+  parent: BaseItem
+  name: оптика
+  description: самоделка.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Objects/Сomponents/pricel.rsi
+    state: icon
+  - type: Item
+    size: Normal
+  - type: Tag
+    tags:
+      - Pricel

@@ -138,6 +138,11 @@
                 sprite: Afgan/Objects/AK-parts/ak74-2part.rsi
                 state: icon
               name: самодельный газблок и ствол
+            - tag: AKpart3
+              icon:
+                sprite: Afgan/Objects/AK-parts/ak74-3part.rsi
+                state: icon
+              name: детали калаша
             - material: WoodPlank
               amount: 30
               doAfter: 10
@@ -256,3 +261,37 @@
               doAfter: 8
     - node: alebard
       entity: AfganAlebard
+
+- type: constructionGraph
+  id: BoltGraph
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: bolt
+          steps:
+            - tag: PipeV
+              icon:
+                sprite: Objects/Trash/trash1.rsi
+                state: icon
+              name: Водонапорная труба
+            - tag: PipeV
+              icon:
+                sprite: Objects/Trash/trash1.rsi
+                state: icon
+              name: Водонапорная труба
+            - tag: Pricel
+              icon:
+                sprite: Afgan/Objects/Сomponents/pricel.rsi
+                state: icon
+              name: оптика
+            - tag: ModularReceiver
+              icon:
+                sprite: Objects/Misc/modular_receiver.rsi
+                state: icon
+              name: модульный ресивер
+            - material: Plastic
+              amount: 5
+              doAfter: 10
+    - node: bolt
+      entity: AfganWeaponPipeSniper

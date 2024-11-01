@@ -30,3 +30,61 @@
   - type: Construction
     graph: PipeGraph
     node: pipe
+
+####sniper rifle
+
+- type: entity
+  name: Болтовка из труб
+  parent: [BaseWeaponSniper, BaseGunWieldable]
+  id: AfganWeaponPipeSniper
+  description: довольно-таки мощная самоделка в руках профессионала.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Weapons/Guns/pipesniper.rsi
+  - type: Clothing
+    sprite: Afgan/Weapons/Guns/pipesniper.rsi
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+      - Cartridge
+    capacity: 1
+    proto: Cartridge50BMG
+  - type: Construction
+    graph: BoltGraph
+    node: bolt
+
+
+- type: entity
+  parent: BaseCartridge
+  id: Cartridge50BMG
+  name: ".50 BMG"
+  suffix: afgan14
+  description: очень мощный патрон, способен положить тушку за пару выстрелов.
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+  - type: CartridgeAmmo
+    proto: Bullet50BMG
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/large_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+
+- type: entity
+  noSpawn: true
+  parent: BaseBullet
+  id: Bullet50BMG
+  name: пуля 50 БМГ
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 45
+        Structural: 30
+  - type: StaminaDamageOnCollide
+    damage: 60

@@ -372,3 +372,16 @@
     sprite: Afgan/Weapons/Melee/alebard.rsi
     state: icon
   objectType: Item
+
+- type: construction
+  name: Самодельная Болтовка из водонапорных труб
+  id: SamodelBolt
+  graph: BoltGraph
+  startNode: start
+  targetNode: bolt
+  category: construction-category-weapons
+  description: real boltovka.
+  icon:
+    sprite: Afgan/Weapons/Guns/pipesniper.rsi
+    state: base
+  objectType: Item

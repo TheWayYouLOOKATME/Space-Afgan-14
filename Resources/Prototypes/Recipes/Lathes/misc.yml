@@ -147,8 +147,8 @@
   result: ModularReceiver
   completetime: 12
   materials:
-    Steel: 750
-    Plastic: 100
+    Steel: 1000
+    Plastic: 500
 
 - type: latheRecipe
   id: FauxTileAstroGrass
@@ -293,7 +293,7 @@
   result: Trash1
   completetime: 5
   materials:
-    Steel: 200
+    Steel: 1000
 
 - type: latheRecipe
   id: Gayki
@@ -335,7 +335,7 @@
   result: WearponComponentAK1
   completetime: 10
   materials:
-    Steel: 1500
+    Steel: 2000
 
 - type: latheRecipe
   id: AK2
@@ -343,6 +343,13 @@
   completetime: 10
   materials:
     Steel: 3000
+
+- type: latheRecipe
+  id: AK3
+  result: WearponComponentAK3
+  completetime: 10
+  materials:
+    Steel: 1500
 
 - type: latheRecipe
   id: AKmagaz
@@ -392,3 +399,19 @@
   completetime: 8
   materials:
     Steel: 2500
+
+- type: latheRecipe
+  id: Pricel
+  result: WearponComponentPricel
+  completetime: 10
+  materials:
+    Steel: 1000
+    Plastic: 500
+
+- type: latheRecipe
+  id: .50BMG
+  result: Cartridge50BMG
+  completetime: 5
+  materials:
+    Steel: 500
+    Plastic: 200
