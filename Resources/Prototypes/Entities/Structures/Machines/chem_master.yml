@@ -1,8 +1,9 @@
 - type: entity
   id: ChemMaster
-  parent: [ BaseMachinePowered, ConstructibleMachine ]
+  parent: [ BaseMachine, ConstructibleMachine ]
   name: ChemMaster 4000
   description: An industrial grade chemical manipulator with pill and bottle production included.
+  suffix: afgan14
   placement:
     mode: SnapgridCenter
   components:
@@ -47,13 +48,10 @@
         acts: [ "Destruction" ]
   - type: ActivatableUI
     key: enum.ChemMasterUiKey.Key
-  - type: ActivatableUIRequiresPower
   - type: UserInterface
     interfaces:
       enum.ChemMasterUiKey.Key:
         type: ChemMasterBoundUserInterface
-  - type: ApcPowerReceiver
-    powerLoad: 250
   - type: Appearance
   - type: GenericVisualizer
     visuals:
