@@ -1,7 +1,7 @@
 # heats an entity or solution placed on it
 - type: entity
   abstract: true
-  parent: [ BaseMachinePowered, ConstructibleMachine ]
+  parent: [ BaseMachine, ConstructibleMachine ]
   id: BaseHeaterMachine
   components:
   - type: Transform
@@ -19,8 +19,6 @@
         - MidImpassable
         - LowImpassable
         hard: false
-  - type: ApcPowerReceiver
-    powerLoad: 300
   - type: Appearance
   - type: ContainerContainer
     containers:

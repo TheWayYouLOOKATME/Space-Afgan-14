@@ -2,31 +2,23 @@
   id: TechnicalAssistant
   name: job-name-technical-assistant
   description: job-description-technical-assistant
-  setPreference: false
   playTimeTracker: JobTechnicalAssistant
   requirements:
     - !type:OverallPlaytimeRequirement
-      time: 3600 #1 hr
-    - !type:DepartmentTimeRequirement
-      department: Engineering
-      time: 3600000 #1000 hrs # Corvax-RoleTime
-      inverted: true # stop playing intern if you're good at engineering!
+      time: 0
   startingGear: TechnicalAssistantGear
   icon: "JobIconTechnicalAssistant"
-  supervisors: job-supervisors-engineering
+  supervisors: job-supervisors-everyone
   access:
   - Maintenance
-  - Engineering
-  - External
 
 - type: startingGear
   id: TechnicalAssistantGear
   equipment:
-    shoes: ClothingShoesBootsWork
-    id: TechnicalAssistantPDA
-    belt: ClothingBeltUtilityEngineering
-    ears: ClothingHeadsetEngineering
-    pocket2: BookEngineersHandbook
-  #storage:
-    #back:
-    #- Stuff
+    jumpsuit: ClothingUniformJumpsuitAlchem
+    shoes: ClothingShoesBootsSandal
+    gloves: ClothingHandsGlovesFingerless
+    pocket1: Torch
+    pocket2: CombatKnife
+    outerClothing: ClothingOuterMantia
+    back: ClothingBackpackSatchelLeather

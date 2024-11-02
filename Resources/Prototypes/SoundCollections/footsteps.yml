@@ -65,7 +65,7 @@
   files:
   - /Audio/Effects/Footsteps/clownstep1.ogg
   - /Audio/Effects/Footsteps/clownstep2.ogg
-  
+
 - type: soundCollection
   id: FootstepJester
   files:
@@ -189,7 +189,7 @@
   id: FootstepBlood
   files:
   - /Audio/Effects/Footsteps/gib_step.ogg
-  
+
 - type: soundCollection
   id: FootstepSticky
   files:
@@ -211,3 +211,19 @@
   id: FootstepHoverBorg
   files:
   - /Audio/Effects/Footsteps/borgwalk2.ogg
+
+- type: soundCollection
+  id: FootstepAfganSand
+  files:
+  - /Audio/Afgan/Footsteps/grass1.ogg
+  - /Audio/Afgan/Footsteps/grass2.ogg
+  - /Audio/Afgan/Footsteps/grass3.ogg
+  - /Audio/Afgan/Footsteps/grass4.ogg
+
+- type: soundCollection
+  id: FootstepAfganMetall
+  files:
+  - /Audio/Afgan/Footsteps/plating1.ogg
+  - /Audio/Afgan/Footsteps/plating2.ogg
+  - /Audio/Afgan/Footsteps/plating3.ogg
+  - /Audio/Afgan/Footsteps/plating4.ogg

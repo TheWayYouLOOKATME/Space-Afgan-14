@@ -17,7 +17,7 @@
     belt: ClothingBeltRPC
     shoes: ClothingShoesBootsSalvage
     head: ClothingHeadHelmetPovstanec
-    gloves: ClothingHandsGlovesMercFingerless
+    gloves: ClothingHandsGlovesFingerless
     pocket1: RadioHandheldSecurity
     pocket2: CombatKnife
   storage:

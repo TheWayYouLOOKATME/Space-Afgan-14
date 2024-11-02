@@ -42,7 +42,7 @@
   description: department-Specific-description
   color: "#9FED58"
   roles:
-  - AtmosphericTechnician
+  - TechnicalAssistant
 
 - type: department
   id: Cargo

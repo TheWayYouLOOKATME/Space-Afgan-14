@@ -18,7 +18,7 @@
     speechVerb: Oblezliy
   - type: NpcFactionMember
     factions:
-    - PrirodaAfgana
+    - Oblez
   - type: NameIdentifier
     group: Oblezliy
   - type: MobsterAccent

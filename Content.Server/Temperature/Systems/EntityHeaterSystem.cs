@@ -1,4 +1,3 @@
-using Content.Server.Power.Components;
 using Content.Server.Temperature.Components;
 using Content.Shared.Examine;
 using Content.Shared.Placeable;
@@ -25,24 +24,21 @@ public sealed class EntityHeaterSystem : EntitySystem
 
         SubscribeLocalEvent<EntityHeaterComponent, ExaminedEvent>(OnExamined);
         SubscribeLocalEvent<EntityHeaterComponent, GetVerbsEvent<AlternativeVerb>>(OnGetVerbs);
-        SubscribeLocalEvent<EntityHeaterComponent, PowerChangedEvent>(OnPowerChanged);
     }
 
     public override void Update(float deltaTime)
     {
-        var query = EntityQueryEnumerator<EntityHeaterComponent, ItemPlacerComponent, ApcPowerReceiverComponent>();
-        while (query.MoveNext(out var uid, out var comp, out var placer, out var power))
+        var query = EntityQueryEnumerator<EntityHeaterComponent, ItemPlacerComponent>();
+        while (query.MoveNext(out var uid, out var comp, out var placer))
         {
-            if (!power.Powered)
-                continue;
 
             // don't divide by total entities since its a big grill
             // excess would just be wasted in the air but that's not worth simulating
             // if you want a heater thermomachine just use that...
-            var energy = power.PowerReceived * deltaTime;
             foreach (var ent in placer.PlacedEntities)
             {
-                _temperature.ChangeHeat(ent, energy);
+                var power = 100f;
+                _temperature.ChangeHeat(ent, power);
             }
         }
     }
@@ -76,36 +72,29 @@ public sealed class EntityHeaterSystem : EntitySystem
         });
     }
 
-    private void OnPowerChanged(EntityUid uid, EntityHeaterComponent comp, ref PowerChangedEvent args)
+    private void ChangeSetting(EntityUid uid, EntityHeaterSetting setting, EntityHeaterComponent? comp = null)
     {
-        // disable heating element glowing layer if theres no power
-        // doesn't actually turn it off since that would be annoying
-        var setting = args.Powered ? comp.Setting : EntityHeaterSetting.Off;
-        _appearance.SetData(uid, EntityHeaterVisuals.Setting, setting);
-    }
-
-    private void ChangeSetting(EntityUid uid, EntityHeaterSetting setting, EntityHeaterComponent? comp = null, ApcPowerReceiverComponent? power = null)
-    {
-        if (!Resolve(uid, ref comp, ref power))
+        if (!Resolve(uid, ref comp))
             return;
 
         comp.Setting = setting;
-        power.Load = SettingPower(setting, comp.Power);
         _appearance.SetData(uid, EntityHeaterVisuals.Setting, setting);
     }
 
-    private float SettingPower(EntityHeaterSetting setting, float max)
+    private float Setting(EntityHeaterSetting setting, float max)
     {
         switch (setting)
         {
             case EntityHeaterSetting.Low:
-                return max / 3f;
+                return max / 2;
             case EntityHeaterSetting.Medium:
-                return max * 2f / 3f;
+                return max / 2;
             case EntityHeaterSetting.High:
-                return max;
+                return max / 2;
+            case EntityHeaterSetting.Off:
+                return max / 2;
             default:
-                return 0f;
+                return max / 2;
         }
     }
 }

@@ -159,13 +159,13 @@
       thresholds:
         - trigger:
             !type:DamageTrigger
-            damage: 60
+            damage: 80
           behaviors:
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
         - trigger:
             !type:DamageTrigger
-            damage: 30 #Weaker shield
+            damage: 60 #Weaker shield
           behaviors:
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
@@ -482,7 +482,7 @@
         jobRequired:
           - SalvageSpecialist
 # Corvax-HiddenDesc-End
-        
+
 - type: entity
   name: broken energy shield
   parent: BaseItem

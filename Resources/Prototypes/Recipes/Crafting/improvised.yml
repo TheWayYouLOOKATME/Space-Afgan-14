@@ -333,3 +333,55 @@
     sprite: Clothing/OuterClothing/Vests/mercwebvest.rsi
     state: icon
   objectType: Item
+
+- type: construction
+  name: Самодельная Булава
+  id: SamodelMace
+  graph: MaceGraph
+  startNode: start
+  targetNode: mace
+  category: construction-category-weapons
+  description: real mace. Robust wearpon.
+  icon:
+    sprite: Afgan/Weapons/Melee/mace.rsi
+    state: icon
+  objectType: Item
+
+- type: construction
+  name: Самодельный Меч
+  id: SamodelSword
+  graph: SwordGraph
+  startNode: start
+  targetNode: sword
+  category: construction-category-weapons
+  description: real sword. Robust wearpon.
+  icon:
+    sprite: Afgan/Weapons/Melee/sword.rsi
+    state: icon
+  objectType: Item
+
+- type: construction
+  name: Самодельная Алебарда
+  id: SamodelAlebard
+  graph: AlebardGraph
+  startNode: start
+  targetNode: alebard
+  category: construction-category-weapons
+  description: real alebard. Robust wearpon.
+  icon:
+    sprite: Afgan/Weapons/Melee/alebard.rsi
+    state: icon
+  objectType: Item
+
+- type: construction
+  name: Самодельная Болтовка из водонапорных труб
+  id: SamodelBolt
+  graph: BoltGraph
+  startNode: start
+  targetNode: bolt
+  category: construction-category-weapons
+  description: real boltovka.
+  icon:
+    sprite: Afgan/Weapons/Guns/pipesniper.rsi
+    state: base
+  objectType: Item

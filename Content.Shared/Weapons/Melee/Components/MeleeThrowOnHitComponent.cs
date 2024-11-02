@@ -19,14 +19,14 @@ public sealed partial class MeleeThrowOnHitComponent : Component
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
     [AutoNetworkedField]
-    public float Speed = 10f;
+    public float Speed = 5f;
 
     /// <summary>
     /// How long hit entities remain thrown, max.
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
     [AutoNetworkedField]
-    public float Lifetime = 3f;
+    public float Lifetime = 0.1f;
 
     /// <summary>
     /// How long we wait to start accepting collision.

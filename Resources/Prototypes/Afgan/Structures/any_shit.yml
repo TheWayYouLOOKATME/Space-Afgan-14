@@ -119,10 +119,12 @@
     price: 25
   - type: AmbientOnPowered
   - type: AmbientSound
-    volume: -15
-    range: 3
+    enabled: false
+    volume: -12
+    range: 7
     sound:
-      path: /Audio/Ambience/Objects/light_hum.ogg
+      path: /Audio/Afgan/Misc/lamp.ogg
+
 
 - type: entity
   name: дерьмо
@@ -196,15 +198,25 @@
   - type: Item
     sprite: Afgan/Objects/radio.rsi
     size: Ginormous
-  - type: EmitSoundOnUse
-    sound:
-      collection: Radio
-  - type: EmitSoundOnTrigger
-    sound:
-      collection: Radio
-  - type: UseDelay
-    delay: 250.0
+  #- type: EmitSoundOnUse
+  #  sound:
+  #    collection: Radio
+  #- type: EmitSoundOnTrigger
+  #  sound:
+  #    collection: Radio
+  #- type: UseDelay
+  #  delay: 250.0
   - type: MultiHandedItem
+  - type: Jukebox
+    onState: on
+    offState: off
+    selectState: select
+  - type: ActivatableUI
+    key: enum.JukeboxUiKey.Key
+  - type: UserInterface
+    interfaces:
+        enum.JukeboxUiKey.Key:
+          type: JukeboxBoundUserInterface
 
 - type: entity
   parent: PosterBase
