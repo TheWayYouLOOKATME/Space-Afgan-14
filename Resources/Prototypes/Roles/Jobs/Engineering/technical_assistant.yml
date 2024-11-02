@@ -6,10 +6,6 @@
   requirements:
     - !type:OverallPlaytimeRequirement
       time: 0
-    - !type:DepartmentTimeRequirement
-      department: Engineering
-      time: 0
-      inverted: true # stop playing intern if you're good at engineering!
   startingGear: TechnicalAssistantGear
   icon: "JobIconTechnicalAssistant"
   supervisors: job-supervisors-everyone

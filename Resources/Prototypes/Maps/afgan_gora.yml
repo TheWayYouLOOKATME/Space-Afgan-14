@@ -19,11 +19,13 @@
             Bartender: [ 1, 1 ]
             Botanist: [ 2, 2 ]
             Chaplain: [ 1, 1 ]
-            Passenger: [ 25, 25 ]
+            Passenger: [ 15, 15 ]
             #rab
             AtmosphericTechnician: [ -1, -1 ]
             #povstans
             Reporter: [ 1, 1 ]
-            Boxer: [ 15, 15 ]
+            Boxer: [ 10, 10 ]
+            #alchemiks
+            TechnicalAssistant: [2, 2]
 
 

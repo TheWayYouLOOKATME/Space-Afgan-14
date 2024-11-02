@@ -1,6 +1,6 @@
 - type: entity
   id: Bonfire
-  parent: BaseStructure
+  parent: BaseHeaterMachine
   name: bonfire
   description: What can be better than a late evening under the sky with guitar and friends?
   components:
@@ -30,7 +30,13 @@
     range: 5
     sound:
       path: /Audio/Ambience/Objects/fireplace.ogg
-  - type: AlwaysHot
+  - type: EntityHeater
+  - type: ItemPlacer
+    maxEntities: 4
+    whitelist:
+      components:
+      - Temperature
+  - type: PlaceableSurface
 
 - type: entity
   id: LegionnaireBonfire
