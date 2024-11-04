@@ -37,7 +37,7 @@ public sealed class EntityHeaterSystem : EntitySystem
             // if you want a heater thermomachine just use that...
             foreach (var ent in placer.PlacedEntities)
             {
-                var power = 100f;
+                var power = 500f;
                 _temperature.ChangeHeat(ent, power);
             }
         }

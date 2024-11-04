@@ -41,10 +41,10 @@
 - type: startingGear
   id: ChiefEngineerGear
   equipment:
-    id: CEPDA
-    eyes: ClothingEyesGlassesMeson
-    ears: ClothingHeadsetCE
-    belt: ClothingBeltUtilityEngineering
-  storage:
-    back:
-    - Flash
+    jumpsuit: ClothingUniformJumpsuitAlchem
+    shoes: ClothingShoesBootsSandal
+    gloves: ClothingHandsGlovesFingerless
+    pocket1: Torch
+    pocket2: CombatKnife
+    outerClothing: ClothingOuterMantia
+    back: ClothingBackpackSatchelLeather

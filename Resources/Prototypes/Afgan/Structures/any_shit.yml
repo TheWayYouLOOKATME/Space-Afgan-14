@@ -189,7 +189,7 @@
   parent: BaseItem
   id: AfganRadio
   name: старое радио
-  description: на нём записаны 5 песен гражданской обороны.
+  description: на нём записаны песени гражданской обороны.
   suffix: afgan14
   components:
   - type: Sprite
@@ -239,3 +239,24 @@
   - type: Sprite
     sprite: Afgan/Structures/flagpov.rsi
     state: base
+
+- type: entity
+  parent: BaseStructure
+  id: AfganMuzMat
+  name: музломат
+  description: Чувак, эта вечеринка отстой. Я, бля, ненавижу этих людей.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Structures/muzlomat.rsi
+    state: mat
+  - type: PointLight
+    radius: 6
+    energy: 4
+  - type: RgbLightController
+    layers: [ 0 ]
+  - type: AmbientSound
+    volume: 1
+    range: 8
+    sound:
+      path: /Audio/Afgan/Music/muzon.ogg

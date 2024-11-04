@@ -26,14 +26,10 @@
 - type: startingGear
   id: SeniorEngineerGear
   equipment:
-    head: ClothingHeadHatBeretEngineering
-    jumpsuit: ClothingUniformJumpsuitSeniorEngineer
-    back: ClothingBackpackEngineeringFilled
-    shoes: ClothingShoesBootsWork
-    id: SeniorEngineerPDA
-    eyes: ClothingEyesGlassesMeson
-    belt: ClothingBeltUtilityEngineering
-    ears: ClothingHeadsetEngineering
-  innerClothingSkirt: ClothingUniformJumpskirtSeniorEngineer
-  satchel: ClothingBackpackSatchelEngineeringFilled
-  duffelbag: ClothingBackpackDuffelEngineeringFilled
+    jumpsuit: ClothingUniformJumpsuitAlchem
+    shoes: ClothingShoesBootsSandal
+    gloves: ClothingHandsGlovesFingerless
+    pocket1: Torch
+    pocket2: CombatKnife
+    outerClothing: ClothingOuterMantia
+    back: ClothingBackpackSatchelLeather
