@@ -241,3 +241,22 @@
   heatCapacity: 10000
   weather: true
   indestructible: true
+
+- type: tile
+  id: FloorAfganWood
+  name: деревянный пол
+  sprite: /Textures/Tiles/Planet/Afgan/wood.png
+  variants: 6
+  placementVariants:
+  - 0.75
+  - 0.06
+  - 0.06
+  - 0.06
+  - 0.06
+  - 0.01
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepWood
+  heatCapacity: 10000
+  weather: true
+  indestructible: true

@@ -22,16 +22,23 @@
 - type: startingGear
   id: MimeGear
   equipment:
-    belt: ClothingBeltSuspenders
-    gloves: ClothingHandsGlovesColorWhite
-    shoes: ClothingShoesColorWhite
-    pocket1: CrayonMime
-    pocket2: Paper
-    id: MimePDA
-    ears: ClothingHeadsetService
+    jumpsuit: ClothingUniformJumpsuitHamas
+    belt: ClothingBeltRPC
+    shoes: ClothingShoesBootsCombatFilled
+    mask: ClothingMaskHamas
+    head: ClothingHeadHelmetHamas
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterVestWeb
+    id: SalvageIDCard
+    pocket1: RadioHandheld
+    pocket2: Torch
   storage:
-    back:
-    - RubberStampMime
+    belt:
+    - BaseMagazineMP9evil
+    - BaseMagazineMP9evil
+    - BaseMagazineMP9evil
+    - SyringeOpium
+
 
 - type: entity
   id: ActionMimeInvisibleWall
