@@ -2,18 +2,29 @@
 using Content.Client.Ghost;
 using Content.Client.UserInterface.Systems.Gameplay;
 using Content.Client.UserInterface.Systems.Ghost.Widgets;
+using Content.Shared.CCVar;
+using Content.Shared._NF.CCVar; // Frontier
 using Content.Shared.Ghost;
+using Robust.Client.Console;
 using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.Controllers;
+using Robust.Shared.IoC;
+using Robust.Shared.Configuration;
+using Robust.Shared.Console;
+using Robust.Shared.Timing;
+using Content.Server.Corvax.Respawn;
 
 namespace Content.Client.UserInterface.Systems.Ghost;
 
 // TODO hud refactor BEFORE MERGE fix ghost gui being too far up
-public sealed class GhostUIController : UIController, IOnSystemChanged<GhostSystem>
+public sealed class GhostUIController : UIController, IOnSystemChanged<GhostSystem>, IOnSystemChanged<RespawnSystem>
 {
     [Dependency] private readonly IEntityNetworkManager _net = default!;
+    [Dependency] private readonly IConsoleHost _consoleHost = default!;
+    [Dependency] private readonly IConfigurationManager _cfg = default!;
 
     [UISystemDependency] private readonly GhostSystem? _system = default;
+    [UISystemDependency] private readonly RespawnSystem? _respawn = default;
 
     private GhostGui? Gui => UIManager.GetActiveUIWidgetOrNull<GhostGui>();
 
@@ -56,6 +67,22 @@ public sealed class GhostUIController : UIController, IOnSystemChanged<GhostSyst
         system.GhostRoleCountUpdated -= OnRoleCountUpdated;
     }
 
+    public void OnSystemLoaded(RespawnSystem system)
+    {
+        system.RespawnReseted += OnRespawnReseted;
+    }
+
+    public void OnSystemUnloaded(RespawnSystem system)
+    {
+        system.RespawnReseted -= OnRespawnReseted;
+    }
+
+    private void OnRespawnReseted()
+    {
+        UpdateGui();
+        UpdateRespawn(_respawn?.RespawnResetTime);
+    }
+
     public void UpdateGui()
     {
         if (Gui == null)
@@ -67,13 +94,20 @@ public sealed class GhostUIController : UIController, IOnSystemChanged<GhostSyst
         Gui.Update(_system?.AvailableGhostRoleCount, _system?.Player?.CanReturnToBody);
     }
 
+    private void UpdateRespawn(TimeSpan? timeOfDeath)
+    {
+        Gui?.UpdateRespawn(timeOfDeath);
+    }
+
     private void OnPlayerRemoved(GhostComponent component)
     {
         Gui?.Hide();
+//        UpdateRespawn(component.TimeOfDeath);
     }
 
     private void OnPlayerUpdated(GhostComponent component)
     {
+//        UpdateRespawn(component.TimeOfDeath);
         UpdateGui();
     }
 
@@ -83,6 +117,7 @@ public sealed class GhostUIController : UIController, IOnSystemChanged<GhostSyst
             return;
 
         Gui.Visible = true;
+        UpdateRespawn(_respawn?.RespawnResetTime);
         UpdateGui();
     }
 
@@ -127,8 +162,13 @@ public sealed class GhostUIController : UIController, IOnSystemChanged<GhostSyst
         Gui.GhostRolesPressed += GhostRolesPressed;
         Gui.TargetWindow.WarpClicked += OnWarpClicked;
         Gui.TargetWindow.OnGhostnadoClicked += OnGhostnadoClicked;
-
+        Gui.GhostRespawnPressed += GuiOnGhostRespawnPressed;
         UpdateGui();
+    }
+
+    private void GuiOnGhostRespawnPressed()
+    {
+        _consoleHost.ExecuteCommand("ghostrespawn");
     }
 
     public void UnloadGui()
@@ -140,6 +180,7 @@ public sealed class GhostUIController : UIController, IOnSystemChanged<GhostSyst
         Gui.ReturnToBodyPressed -= ReturnToBody;
         Gui.GhostRolesPressed -= GhostRolesPressed;
         Gui.TargetWindow.WarpClicked -= OnWarpClicked;
+        Gui.GhostRespawnPressed -= GuiOnGhostRespawnPressed;
 
         Gui.Hide();
     }
@@ -159,5 +200,10 @@ public sealed class GhostUIController : UIController, IOnSystemChanged<GhostSyst
     private void GhostRolesPressed()
     {
         _system?.OpenGhostRoles();
+    }
+
+    private void RespawnPressed()
+    {
+        IoCManager.Resolve<IClientConsoleHost>().RemoteExecuteCommand(null, "ghostrespawn");
     }
 }
