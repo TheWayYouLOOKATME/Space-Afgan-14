@@ -423,3 +423,10 @@
   materials:
     Steel: 3000
     Plastic: 3000
+
+- type: latheRecipe
+  id: Hauberk
+  result: ClothingUniformJumpsuitHauberk
+  completetime: 10
+  materials:
+    Steel: 3000

@@ -21,6 +21,7 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitTaliban
     back: ClothingBackpackSatchelLeather
+    belt: AfganSword
     shoes: ClothingShoesBootsSteel
     neck: ClothingNeckNaplechniki
     mask: ClothingMaskHamas

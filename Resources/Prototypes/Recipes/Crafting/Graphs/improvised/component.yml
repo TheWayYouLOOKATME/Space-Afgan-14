@@ -321,3 +321,29 @@
               doAfter: 15
     - node: pnv
       entity: ClothingEyesVision
+
+- type: constructionGraph
+  id: BerciGraph
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: berci
+          steps:
+            - tag: SteelBoots
+              icon:
+                sprite: Afgan/Clothing/Boots/steel.rsi
+                state: icon
+              name: стальные поножи
+            - tag: Plastina
+              icon:
+                sprite: Afgan/Objects/kevlar.rsi
+                state: icon
+              name: кевларовая пластина
+            - material: Steel
+              amount: 5
+            - material: Cloth
+              amount: 5
+              doAfter: 10
+    - node: berci
+      entity: ClothingShoesBootsSteelUpgrade

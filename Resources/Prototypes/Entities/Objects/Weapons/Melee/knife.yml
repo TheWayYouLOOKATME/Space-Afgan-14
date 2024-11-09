@@ -76,6 +76,7 @@
   parent: BaseKnife
   id: CombatKnife
   description: A deadly knife intended for melee confrontations.
+  suffix: afgan14, resprite
   components:
   - type: Tag
     tags:
