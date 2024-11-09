@@ -16,7 +16,7 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitPovstan
     back: ClothingBackpackSatchelLeather
-    eyes: ClothingEyesGlassesMercenary
+    eyes: ClothingEyesVision
     shoes: ClothingShoesBootsMercFilled
     mask: ClothingMaskBalistic
     head: ClothingHeadHelmetPovstanec

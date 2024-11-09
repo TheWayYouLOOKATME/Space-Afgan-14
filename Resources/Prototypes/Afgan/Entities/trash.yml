@@ -26,7 +26,7 @@
   id: Trash2
   parent: BaseItem
   name: кусок древесины
-  description: мусор, используемый для создания оружия кустарного производства.
+  description: мусор.
   suffix: afgan14
   components:
   - type: Sprite
@@ -83,3 +83,80 @@
     tags:
       - Izolenta
 
+- type: entity
+  id: Trash6
+  parent: BaseItem
+  name: обломки древесины
+  description: мусор.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Objects/Trash/trash6.rsi
+    state: icon
+  - type: Item
+    size: Normal
+
+- type: entity
+  id: Trash7
+  parent: BaseItem
+  name: побитая каска
+  description: мусор.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Objects/Trash/trash7.rsi
+    state: icon
+  - type: Item
+    size: Normal
+
+- type: entity
+  id: Trash8
+  parent: BaseItem
+  name: чья-то нога
+  description: мусор.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Objects/Trash/trash8.rsi
+    state: icon
+  - type: Item
+    size: Normal
+
+- type: entity
+  id: Trash9
+  parent: BaseItem
+  name: чей-то палец
+  description: мусор.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Objects/Trash/trash9.rsi
+    state: icon
+  - type: Item
+    size: Tiny
+
+- type: entity
+  id: Trash10
+  parent: BaseItem
+  name: камень
+  description: просто... камень...
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Objects/Trash/trash10.rsi
+    state: icon
+  - type: Item
+    size: Tiny
+
+- type: entity
+  id: Trash11
+  parent: BaseItem
+  name: гнилое бревно
+  description: мусор.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Objects/Trash/trash11.rsi
+    state: icon
+  - type: Item
+    size: Tiny

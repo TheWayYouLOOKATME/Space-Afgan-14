@@ -12,28 +12,26 @@
     - type: RandomSpawner
       rarePrototypes:
         - PuddleVomit
-        - FoodPlateSmallTrash
-        - FoodBowlBigTrash
+        - WearponComponentRukoiatLuty
+        - WearponComponentAK2
       rareChance: 0.03
       prototypes:
-#        - TrashCandy
-        - FoodPacketBoritosTrash
-        - FoodPacketCheesieTrash
-        - FoodPacketChipsTrash
-        - FoodPacketChocolateTrash
-        - FoodPacketChowMeinTrash
-        - FoodPacketCnDsTrash
-        - FoodPacketDanDanTrash
-        - FoodPacketEnergyTrash
-        - FoodPacketPistachioTrash
-#        - TrashPlasticBag
-        - FoodPacketPopcornTrash
-        - FoodPacketRaisinsTrash
-        - FoodPacketSemkiTrash
-        - FoodPacketSusTrash
-        - FoodPacketSyndiTrash
-        - BrokenBottle
-      chance: 0.5
+        - Trash1
+        - Trash2
+        - Trash3
+        - Trash4
+        - Trash5
+        - Trash6
+        - Trash7
+        - Trash8
+        - Trash9
+        - Trash10
+        - Trash11
+        - OrganHumanStomach
+        - OrganHumanHeart
+        - MaterialBones1
+        - FoodKakashka
+      chance: 0.1
       offset: 0.2
   placement:
     mode: AlignTileAny
@@ -46,4 +44,4 @@
     mode: AlignTileAny
   components:
   - type: RandomSpawner
-    chance: 1
+    chance: 0.5

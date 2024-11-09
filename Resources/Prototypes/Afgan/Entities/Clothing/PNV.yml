@@ -11,11 +11,23 @@
     state: icon
   - type: Clothing
     sprite: Afgan/Clothing/Eyes/PNV.rsi
+    layers:
+      - state: equipped-EYES
+      - state: equipped-EYES-Power
+        shader: unshaded
+        visible: true
+        map: ["equipped-EYES-Power"]
     quickEquip: true
     slots: [ Eyes ]
   - type: UseDelay
     delay: 4
   - type: PNV
+  - type: ToggleableLightVisuals
+  spriteLayer: equipped-EYES-Power
+  inhandVisuals:
+  clothingVisuals:
+    eyes:
+    - state: equipped-EYES-Power
 
 - type: entity
   id: NVToggleAction
