@@ -39,7 +39,6 @@
     - replay_stop
     - replay_load
     - saveconfig
-    - respawn
 
 - Flags: DEBUG
   Commands:
@@ -74,7 +73,6 @@
     - detachent
     - localdelete
     - fullstatereset
-    - respawn
 
 - Flags: MAPPING
   Commands:

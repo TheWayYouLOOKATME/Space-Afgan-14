@@ -22,6 +22,9 @@
   - type: UseDelay
     delay: 4
   - type: PNV
+  - type: Construction
+    graph: PnvGraph
+    node: pnv
   - type: ToggleableLightVisuals
   spriteLayer: equipped-EYES-Power
   inhandVisuals:
