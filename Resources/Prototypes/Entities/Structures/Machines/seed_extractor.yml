@@ -1,7 +1,8 @@
 ﻿- type: entity
   id: SeedExtractor
   name: seed extractor
-  parent: [ BaseMachinePowered, ConstructibleMachine ]
+  parent: [ BaseMachine, ConstructibleMachine ]
+  suffix: afgan14
   description: Extracts seeds from produce.
   components:
   - type: Sprite
