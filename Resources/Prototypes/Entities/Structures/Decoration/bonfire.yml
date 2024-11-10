@@ -3,6 +3,7 @@
   parent: BaseHeaterMachine
   name: bonfire
   description: What can be better than a late evening under the sky with guitar and friends?
+  suffix: afgan14
   components:
   - type: Sprite
     noRot: true
@@ -37,6 +38,18 @@
       components:
       - Temperature
   - type: PlaceableSurface
+  - type: StepTrigger
+    requiredTriggeredSpeed: 0
+    intersectRatio: 0.1
+    blacklist:
+      tags:
+        - Catwalk
+  - type: TileEntityEffect
+    effects:
+    - !type:FlammableReaction
+      multiplier: 3.75
+      multiplierOnExisting: 0.75
+    - !type:Ignite
 
 - type: entity
   id: LegionnaireBonfire

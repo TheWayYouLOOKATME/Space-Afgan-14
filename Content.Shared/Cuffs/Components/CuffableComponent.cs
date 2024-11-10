@@ -46,6 +46,8 @@ public sealed partial class CuffableComponent : Component
     public ProtoId<AlertPrototype> CuffedAlert = "Handcuffed";
 }
 
+public sealed partial class RemoveCuffsAlertEvent : BaseAlertEvent;
+
 [Serializable, NetSerializable]
 public sealed class CuffableComponentState : ComponentState
 {
@@ -67,4 +69,3 @@ public sealed class CuffableComponentState : ComponentState
 
 [ByRefEvent]
 public readonly record struct CuffedStateChangeEvent;
-
