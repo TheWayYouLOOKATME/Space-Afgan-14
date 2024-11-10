@@ -249,6 +249,7 @@
   id: ClothingHandsGlovesCombat
   name: combat gloves
   description: These tactical gloves are fireproof and shock resistant.
+  suffix: afgan14, resprite
   components:
   - type: Sprite
     sprite: Clothing/Hands/Gloves/combat.rsi
@@ -300,6 +301,7 @@
   id: ClothingHandsGlovesFingerless
   name: fingerless gloves
   description: Plain black gloves without fingertips for the hard working.
+  suffix: afgan14, resprite
   components:
   - type: Sprite
     sprite: Clothing/Hands/Gloves/fingerless.rsi
@@ -463,7 +465,7 @@
         Piercing: 0.95
   - type: FingerprintMask
   - type: ClothingSpeedModifier
-    walkModifier: 0.98
-    sprintModifier: 0.98
+    walkModifier: 0.97
+    sprintModifier: 0.97
   - type: Reflect
     reflectProb: 0.03

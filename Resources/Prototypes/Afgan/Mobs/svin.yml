@@ -73,6 +73,9 @@
       0: Alive
       175: Critical
       200: Dead
+  - type: NightVision
+    isToggle: true
+    color: "#808080"
 
 - type: entity
   name: Svin Angry Timed Spawner

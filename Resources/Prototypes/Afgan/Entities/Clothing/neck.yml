@@ -14,7 +14,7 @@
         Slash: 0.9
         Piercing: 0.95
   - type: ClothingSpeedModifier
-    walkModifier: 0.99
-    sprintModifier: 0.99
+    walkModifier: 0.98
+    sprintModifier: 0.98
   - type: Reflect
     reflectProb: 0.02

@@ -1421,3 +1421,9 @@
 
 - type: Tag
   id: Pricel
+
+- type: Tag
+  id: PNVcarcas
+
+- type: Tag
+  id: SteelBoots

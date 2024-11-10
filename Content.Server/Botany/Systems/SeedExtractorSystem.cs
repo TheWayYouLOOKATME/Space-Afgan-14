@@ -1,6 +1,5 @@
 using Content.Server.Botany.Components;
 using Content.Server.Popups;
-using Content.Server.Power.EntitySystems;
 using Content.Shared.Interaction;
 using Content.Shared.Popups;
 using Robust.Shared.Random;
@@ -22,8 +21,6 @@ public sealed class SeedExtractorSystem : EntitySystem
 
     private void OnInteractUsing(EntityUid uid, SeedExtractorComponent seedExtractor, InteractUsingEvent args)
     {
-        if (!this.IsPowered(uid, EntityManager))
-            return;
 
         if (!TryComp(args.Used, out ProduceComponent? produce))
             return;

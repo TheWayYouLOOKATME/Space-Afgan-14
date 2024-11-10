@@ -385,3 +385,29 @@
     sprite: Afgan/Weapons/Guns/pipesniper.rsi
     state: base
   objectType: Item
+
+- type: construction
+  name: ПНВ
+  id: SamodelPnv
+  graph: PnvGraph
+  startNode: start
+  targetNode: pnv
+  category: construction-category-weapons
+  description: real PNV.
+  icon:
+    sprite: Afgan/Clothing/Eyes/PNV.rsi
+    state: icon
+  objectType: Item
+
+- type: construction
+  name: Бронеберцы
+  id: SamodelBerci
+  graph: BerciGraph
+  startNode: start
+  targetNode: berci
+  category: construction-category-weapons
+  description: real berci.
+  icon:
+    sprite: Afgan/Clothing/Boots/berci.rsi
+    state: icon
+  objectType: Item

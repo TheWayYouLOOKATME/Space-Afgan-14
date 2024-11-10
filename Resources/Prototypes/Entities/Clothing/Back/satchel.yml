@@ -17,6 +17,7 @@
   id: ClothingBackpackSatchelLeather
   name: leather satchel
   description: A trend-setting satchel from a bygone era.
+  suffix: afgan14, resprite
   components:
   - type: Sprite
     sprite: Clothing/Back/Satchels/leather.rsi
@@ -63,6 +64,7 @@
 - type: entity
   parent: ClothingBackpackSatchel
   id: ClothingBackpackSatchelMedical
+  suffix: afgan14, resprite
   name: medical satchel
   description: A sterile satchel used in medical departments.
   components:

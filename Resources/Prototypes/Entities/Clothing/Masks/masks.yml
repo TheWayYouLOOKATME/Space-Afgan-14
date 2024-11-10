@@ -670,3 +670,8 @@
   - type: Construction
     graph: MaskGraph
     node: mask
+  - type: ClothingSpeedModifier
+    walkModifier: 0.98
+    sprintModifier: 0.98
+  - type: Reflect
+    reflectProb: 0.05

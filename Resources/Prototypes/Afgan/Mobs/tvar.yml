@@ -78,6 +78,9 @@
     description: УБИВАЙ. ЭТИ СУКИ ПРИЛЕТЕЛИ НА ТВОЮ ПЛАНЕТУ, ТЫ ТУТ ЦАРЬ. ОНИ ВСЕ УМРУТ.
     rules: УБИВАЙ
   - type: GhostTakeoverAvailable
+  - type: NightVision
+    isToggle: true
+    color: "#f1110e"
 
 - type: entity
   name: Tvar Spawner

@@ -1,5 +1,5 @@
 - type: construction
-  name: torch
+  name: Факел
   id: LightTorch
   graph: LightTorch
   startNode: start

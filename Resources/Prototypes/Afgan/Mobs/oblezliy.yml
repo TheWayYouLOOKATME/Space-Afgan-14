@@ -49,6 +49,10 @@
       0: Alive
       100: Critical
       125: Dead
+  - type: NightVision
+    isToggle: true
+    color: "#808080"
+
 
 - type: entity
   name: Oblezliy Spawner

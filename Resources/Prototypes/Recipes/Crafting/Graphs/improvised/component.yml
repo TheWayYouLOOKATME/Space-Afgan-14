@@ -295,3 +295,55 @@
               doAfter: 10
     - node: bolt
       entity: AfganWeaponPipeSniper
+
+- type: constructionGraph
+  id: PnvGraph
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: pnv
+          steps:
+            - tag: PNVcarcas
+              icon:
+                sprite: Afgan/Objects/Сomponents/carcas-pnv.rsi
+                state: icon
+              name: Каркас ПНВ
+            - tag: Gayki
+              icon:
+                sprite: Objects/Trash/trash3.rsi
+                state: icon
+              name: Гайки
+            - material: Glass
+              amount: 15
+            - material: Plasma
+              amount: 15
+              doAfter: 15
+    - node: pnv
+      entity: ClothingEyesVision
+
+- type: constructionGraph
+  id: BerciGraph
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: berci
+          steps:
+            - tag: SteelBoots
+              icon:
+                sprite: Afgan/Clothing/Boots/steel.rsi
+                state: icon
+              name: стальные поножи
+            - tag: Plastina
+              icon:
+                sprite: Afgan/Objects/kevlar.rsi
+                state: icon
+              name: кевларовая пластина
+            - material: Steel
+              amount: 5
+            - material: Cloth
+              amount: 5
+              doAfter: 10
+    - node: berci
+      entity: ClothingShoesBootsSteelUpgrade

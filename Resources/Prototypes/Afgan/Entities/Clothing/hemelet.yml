@@ -17,8 +17,8 @@
         Piercing: 0.8
         Heat: 0.9
   - type: ClothingSpeedModifier
-    walkModifier: 0.99
-    sprintModifier: 0.99
+    walkModifier: 0.98
+    sprintModifier: 0.98
   - type: Reflect
     reflectProb: 0.05
 
@@ -44,8 +44,8 @@
         Piercing: 0.9
         Heat: 0.9
   - type: ClothingSpeedModifier
-    walkModifier: 0.99
-    sprintModifier: 0.99
+    walkModifier: 0.97
+    sprintModifier: 0.97
   - type: Reflect
     reflectProb: 0.03
 
@@ -68,8 +68,8 @@
         Piercing: 0.8
         Heat: 0.9
   - type: ClothingSpeedModifier
-    walkModifier: 0.99
-    sprintModifier: 0.99
+    walkModifier: 0.98
+    sprintModifier: 0.98
   - type: Reflect
     reflectProb: 0.05
 
@@ -99,8 +99,8 @@
     graph: AltinGraph
     node: altin
   - type: ClothingSpeedModifier
-    walkModifier: 0.97
-    sprintModifier: 0.97
+    walkModifier: 0.96
+    sprintModifier: 0.96
   - type: Reflect
     reflectProb: 0.07
 
@@ -123,7 +123,7 @@
         Piercing: 0.8
         Heat: 0.9
   - type: ClothingSpeedModifier
-    walkModifier: 0.99
-    sprintModifier: 0.99
+    walkModifier: 0.98
+    sprintModifier: 0.98
   - type: Reflect
     reflectProb: 0.05

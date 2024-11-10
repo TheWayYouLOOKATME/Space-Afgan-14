@@ -157,3 +157,20 @@
   - type: Tag
     tags:
       - Pricel
+
+
+- type: entity
+  id: WearponComponentCarcasPNV
+  parent: BaseItem
+  name: каркас ПНВ
+  description: самоделка.
+  suffix: afgan14
+  components:
+  - type: Sprite
+    sprite: Afgan/Objects/Сomponents/carcas-pnv.rsi
+    state: icon
+  - type: Item
+    size: Normal
+  - type: Tag
+    tags:
+      - PNVcarcas
