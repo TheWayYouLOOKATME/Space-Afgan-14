@@ -1,0 +1,9 @@
+- type: moodEffect
+  id: GotBlessed
+  moodChange: 8
+  timeout: 480
+
+- type: moodEffect
+  id: SavedLife
+  moodChange: 7
+  timeout: 480

@@ -1,3 +1,4 @@
+using Content.Shared._Sunrise.Mood;
 using Content.Shared.Administration.Logs;
 using Content.Shared.Database;
 using Content.Shared.Inventory;
@@ -101,6 +102,8 @@ public sealed class SlipperySystem : EntitySystem
 
         _stun.TryParalyze(other, TimeSpan.FromSeconds(component.ParalyzeTime), true);
 
+
+        RaiseLocalEvent(other, new MoodEffectEvent("MobSlipped"));
         // Preventing from playing the slip sound when you are already knocked down.
         if (playSound)
         {

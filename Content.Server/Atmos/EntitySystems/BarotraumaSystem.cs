@@ -2,6 +2,7 @@ using System.Diagnostics.CodeAnalysis;
 using Content.Server.Administration.Logs;
 using Content.Server.Atmos.Components;
 using Content.Shared.Alert;
+using Content.Shared._Sunrise.Mood;
 using Content.Shared.Atmos;
 using Content.Shared.Damage;
 using Content.Shared.Database;
@@ -245,6 +246,7 @@ namespace Content.Server.Atmos.EntitySystems
                         _adminLogger.Add(LogType.Barotrauma, $"{ToPrettyString(uid):entity} started taking low pressure damage");
                     }
 
+                    RaiseLocalEvent(uid, new MoodEffectEvent("MobLowPressure"));
                     _alertsSystem.ShowAlert(uid, barotrauma.LowPressureAlert, 2);
                 }
                 else if (pressure >= Atmospherics.HazardHighPressure)
@@ -260,6 +262,7 @@ namespace Content.Server.Atmos.EntitySystems
                         _adminLogger.Add(LogType.Barotrauma, $"{ToPrettyString(uid):entity} started taking high pressure damage");
                     }
 
+                    RaiseLocalEvent(uid, new MoodEffectEvent("MobHighPressure"));
                     _alertsSystem.ShowAlert(uid, barotrauma.HighPressureAlert, 2);
                 }
                 else
