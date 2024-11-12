@@ -705,23 +705,3 @@
           shouldHave: false
         walkSpeedModifier: 0.4
         sprintSpeedModifier: 0.4
-
-- type: reagent
-  id: GovnoToxin
-  name: reagent-name-govno-toxin
-  group: Toxins
-  desc: reagent-desc-govno-toxin
-  physicalDesc: reagent-physical-desc-strong-smelling
-  color: "#573b03"
-  metabolisms:
-    Poison:
-      effects:
-      - !type:HealthChange
-        damage:
-          types:
-            Asphyxiation: 1
-      - !type:ChemVomit
-        probability: 0.8
-        conditions:
-          - !type:ReagentThreshold
-            min: 3

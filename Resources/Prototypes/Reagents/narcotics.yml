@@ -482,7 +482,7 @@
         key: SeeingRainbows
         component: SeeingRainbows
         type: Add
-        time: 5
+        time: 10
         refresh: false
       - !type:Emote
         emote: Laugh
