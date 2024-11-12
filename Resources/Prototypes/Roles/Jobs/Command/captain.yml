@@ -34,6 +34,9 @@
   - !type:AddComponentSpecial
     components:
       - type: CommandStaff
+  - !type:AddComponentSpecial
+    components:
+    - type: BibleUser
 
 - type: startingGear
   id: CaptainGear
