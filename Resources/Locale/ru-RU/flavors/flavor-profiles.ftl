@@ -217,7 +217,6 @@ flavor-complex-coffee = как кофе
 flavor-complex-milk = как молоко
 flavor-complex-tea = как чай
 flavor-complex-ice = как лёд
-flavor-complex-shit = как говнище
 
 ## Cocktails
 

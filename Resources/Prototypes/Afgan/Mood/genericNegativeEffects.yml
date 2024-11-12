@@ -10,7 +10,7 @@
 - type: moodEffect
   id: OnFire
   moodChange: -20
-  timeout: 300
+  timeout: 600
 
 - type: moodEffect
   id: Creampied
@@ -18,23 +18,23 @@
 
 - type: moodEffect
   id: MobSlipped
-  moodChange: -7
+  moodChange: -5
   timeout: 180
 
 - type: moodEffect
   id: MobVomit
-  moodChange: -15
+  moodChange: -10
   timeout: 480
 
 - type: moodEffect
   id: MobLowPressure
   moodChange: -30
-  timeout: 50
+  timeout: 10
 
 - type: moodEffect
   id: MobHighPressure
   moodChange: -30
-  timeout: 50
+  timeout: 10
 
 - type: moodEffect
   id: Dead
